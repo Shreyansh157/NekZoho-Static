@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="public/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title data-lang-key="title.about">About Us | NekZoho</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html">
+        Nek<span class="text-dark">Zoho</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main-nav"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="index.html" data-lang-key="nav.home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="about.html" data-lang-key="nav.about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="services.html" data-lang-key="nav.services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="blogs.html" data-lang-key="nav.blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="contact.html" data-lang-key="nav.contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-lg-auto">
+          <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme" title="Toggle theme">
+            </button>
+          
+          <div id="language-toggle" class="d-flex align-items-center ms-2">
+            <button class="btn btn-sm btn-primary py-0 px-2" data-lang="en" style="font-size: 0.8rem">EN</button>
+            <button class="btn btn-sm btn-outline-secondary py-0 px-2 ms-1" data-lang="nl" style="font-size: 0.8rem">NL</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <main>
+
+    <section class="bg-primary text-white py-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold text-white" data-lang-key="pageAbout.title">About NekZoho</h1>
+        <p class="lead text-white-75" data-lang-key="pageAbout.breadcrumb">Home / About Us</p>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding fade-in-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <p class="text-primary fw-semibold text-uppercase mb-2" data-lang-key="about.preTitle">Our Vision</p>
+            <h2 class="display-5 fw-bold text-dark mb-4" data-lang-key="about.title">About NekZoho</h2>
+            <p class="lead text-muted mb-4" data-lang-key="about.lead">
+              As a Zoho Authorized Partner, we specialize in transforming businesses through intelligent automation and robust digital strategies.
+            </p>
+            <p class="text-muted mb-4" data-lang-key="about.body">
+              Our team of certified experts delivers tailored solutions that streamline operations, enhance customer relationships, and drive measurable growth.
+            </p>
+            <ul class="list-unstyled text-dark fs-5">
+              <li class="mb-2 d-flex">
+                <span class="text-primary me-2 mt-1 flex-shrink-0" data-icon="CheckCircle" data-icon-size="24"></span>
+                <span data-lang-key="about.point1">Zoho Authorized Partner with proven expertise.</span>
+              </li>
+              <li class="mb-2 d-flex">
+                <span class="text-primary me-2 mt-1 flex-shrink-0" data-icon="CheckCircle" data-icon-size="24"></span>
+                <span data-lang-key="about.point2">Custom solutions for unique business challenges.</span>
+              </li>
+              <li class="mb-2 d-flex">
+                <span class="text-primary me-2 mt-1 flex-shrink-0" data-icon="CheckCircle" data-icon-size="24"></span>
+                <span data-lang-key="about.point3">Dedicated support and long-term partnership.</span>
+              </li>
+            </ul>
+            <a href="#team-section" class="btn btn-primary btn-lg rounded-pill px-5 py-3 mt-3" data-lang-key="about.cta">
+              Meet Our Team
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="assets/images/about-team.png" alt="NekZoho Team" class="img-fluid rounded-3 shadow-lg" />
+              <div
+                class="bg-primary text-white p-4 rounded-3 shadow-lg position-absolute d-none d-lg-block"
+                style="bottom: -2rem; right: -2rem"
+              >
+                <h3 class="fw-bold mb-0 text-white">10+</h3>
+                <p class="mb-0 fs-5" data-lang-key="about.experience">Years Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="core-values" class="section-padding fade-in-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <h2 class="display-5 fw-bold text-dark" data-lang-key="values.title">Our Core Values</h2>
+            <p class="lead text-muted mt-3" data-lang-key="values.subTitle">The principles that guide our work and define who we are.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 text-center shadow-sm border-0 p-4 service-card">
+              <div class="card-body">
+                <div class="icon-shape mx-auto mb-4">
+                  <span data-icon="Target" data-icon-size="32"></span>
+                </div>
+                <h3 class="fs-5 fw-bold mb-3" data-lang-key="values.v1Title">Client Success</h3>
+                <p class="text-muted small" data-lang-key="values.v1Desc">Our primary focus is delivering measurable results and ensuring our clients achieve their business goals.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 text-center shadow-sm border-0 p-4 service-card">
+              <div class="card-body">
+                <div class="icon-shape mx-auto mb-4">
+                  <span data-icon="Lightbulb" data-icon-size="32"></span>
+                </div>
+                <h3 class="fs-5 fw-bold mb-3" data-lang-key="values.v2Title">Innovation</h3>
+                <p class="text-muted small" data-lang-key="values.v2Desc">We constantly explore new technologies and strategies to provide cutting-edge solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 text-center shadow-sm border-0 p-4 service-card">
+              <div class="card-body">
+                <div class="icon-shape mx-auto mb-4">
+                  <span data-icon="Users" data-icon-size="32"></span>
+                </div>
+                <h3 class="fs-5 fw-bold mb-3" data-lang-key="values.v3Title">Collaboration</h3>
+                <p class="text-muted small" data-lang-key="values.v3Desc">We believe in strong partnerships, working closely with our clients and within our team.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 text-center shadow-sm border-0 p-4 service-card">
+              <div class="card-body">
+                <div class="icon-shape mx-auto mb-4">
+                  <span data-icon="CheckSquare" data-icon-size="32"></span>
+                </div>
+                <h3 class="fs-5 fw-bold mb-3" data-lang-key="values.v4Title">Integrity</h3>
+                <p class="text-muted small" data-lang-key="values.v4Desc">We operate with transparency, honesty, and uphold the highest ethical standards in all our interactions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team-section" class="section-padding bg-light pb-4 fade-in-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <h2 class="display-5 fw-bold text-dark" data-lang-key="team.title">Meet the Team</h2>
+            <p class="lead text-muted mt-3" data-lang-key="team.subTitle">The passionate experts driving NekZoho's success.</p>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member1Name">Sweta Verma</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member1Title">Head of HR Department</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member2Name">Kripa Shankar Sharan</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member2Title">Director of Sales & Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member3Name">Rudra CK</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member3Title">IT Department Head</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member4Name">Alok Verma</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member4Title">Director of Support & Operation</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member5Name">Prince Agarkar</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member5Title">Software Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member6Name">Mugdha</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member6Title">Website Department Lead</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member7Name">Richa Sinha</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member7Title">IT Support Lead</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 text-center shadow border-0 overflow-hidden team-card">
+              <img src="assets/images/member-pfp.png" class="card-img-top team-member-img" alt="Team Member" style="height: 250px; object-fit: cover" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-1" data-lang-key="team.member8Name">Rashi Agarwal</h5>
+                <p class="card-text text-primary mb-2" data-lang-key="team.member8Title">Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-choose-us" class="section-padding bg-light-textured-1 fade-in-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <p class="text-primary fw-semibold text-uppercase mb-2" data-lang-key="whyUs.preTitle">Our Edge</p>
+            <h2 class="display-5 fw-bold text-dark" data-lang-key="whyUs.title">Why Partner with NekZoho?</h2>
+            <p class="lead text-muted mt-3" data-lang-key="whyUs.subTitle">We are committed to delivering excellence, innovation, and measurable value to every client.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-shape">
+                  <span data-icon="Award" data-icon-size="32"></span>
+                </div>
+              </div>
+              <div class="ms-4">
+                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f1Title">Zoho Authorized Partner</h3>
+                <p class="text-muted" data-lang-key="whyUs.f1Desc">Certified experts ensuring best practices and optimized solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-shape">
+                  <span data-icon="Brain" data-icon-size="32"></span>
+                </div>
+              </div>
+              <div class="ms-4">
+                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f2Title">Strategic Consulting</h3>
+                <p class="text-muted" data-lang-key="whyUs.f2Desc">Beyond implementation, we provide insights for long-term growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-shape">
+                  <span data-icon="CheckCircle" data-icon-size="32"></span>
+                </div>
+              </div>
+              <div class="ms-4">
+                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f3Title">Results-Oriented Approach</h3>
+                <p class="text-muted" data-lang-key="whyUs.f3Desc">Our focus is on delivering measurable outcomes and ROI for your business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-shape">
+                  <span data-icon="Users" data-icon-size="32"></span>
+                </div>
+              </div>
+              <div classs="ms-4">
+                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f4Title">Client-Centric Service</h3>
+                <p class="text-muted" data-lang-key="whyUs.f4Desc">Your success is our priority. We offer dedicated support and communication.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-shape">
+                  <span data-icon="Rocket" data-icon-size="32"></span>
+                </div>
+              </div>
+              <div class="ms-4">
+                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f5Title">Innovative Solutions</h3>
+                <p class="text-muted" data-lang-key="whyUs.f5Desc">Staying ahead with the latest technologies and design trends.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-shape">
+                  <span data-icon="ShieldCheck" data-icon-size="32"></span>
+                </div>
+              </div>
+              <div class="ms-4">
+                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f6Title">Data Security & Integrity</h3>
+                <p class="text-muted" data-lang-key="whyUs.f6Desc">Robust measures to protect your valuable business information.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="section-padding bg-dark text-white text-center pb-1 fade-in-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="display-4 fw-bold text-white" data-lang-key="cta.title">
+              Ready to <span class="text-primary">Elevate Your Business?</span>
+            </h2>
+            <p class="lead text-white-50 my-4" data-lang-key="cta.subTitle">
+              Connect with NekZoho experts today and discover how tailored solutions in Zoho, web development, and digital marketing can drive your success.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3" data-lang-key="cta.button">
+              Connect With Us
+            </a>
+          </div>
+        </div>
+        <hr class="border-white-50 mt-5" />
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white pt-3 pb-5">
+    <div class="container">
+      <div class="row g-4 pt-2 pb-3">
+        <div class="col-lg-4 col-md-12">
+          <a class="navbar-brand fw-bold fs-2 text-white text-decoration-none" href="index.html">
+            Nek<span class="text-white-50">Zoho</span>
+          </a>
+          <p class="text-white-50 my-3" data-lang-key="footer.tagline">Empowering businesses through Zoho, Web Development, and Digital Marketing solutions.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-outline-primary btn-circle me-2" data-icon="Globe" data-icon-size="18"></a>
+            <a href="#" class="btn btn-outline-primary btn-circle me-2" data-icon="MessageSquare" data-icon-size="18"></a>
+            <a href="#" class="btn btn-outline-primary btn-circle" data-icon="Calendar" data-icon-size="18"></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.links">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.home">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.about">About</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.services">Services</a></li>
+            <li class="mb-2"><a href="blogs.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.blogs">Blog</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.services">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service1">Zoho Consulting</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service2">Web Development</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service3">Digital Marketing</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service4">CRM/ERP</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service5">Automation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.contact">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2">
+              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Mail" data-icon-size="18"></span>
+              <a href="mailto:info@nekzoho.com" class="text-white-50 text-decoration-none hover-primary">info@nekzoho.com</a>
+            </li>
+            <li class="d-flex mb-2">
+              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Phone" data-icon-size="18"></span>
+              <a href="tel:+1234567890" class="text-white-50 text-decoration-none hover-primary">+1 (234) 567-890</a>
+            </li>
+            <li class="d-flex mb-2">
+              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="MapPin" data-icon-size="18"></span>
+              <span class="text-white-50" data-lang-key="footer.address">123 Business Way, City, State</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-white-50" />
+      <div class="text-center text-white-50 pt-4">
+        <small data-lang-key="footer.copyright">© 2025 NekZoho. All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.395.0/dist/lucide.min.js"></script>
+
+  <script src="locales/en.js"></script>
+  <script src="locales/nl.js"></script>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

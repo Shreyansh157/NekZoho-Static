@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="public/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Blog Post | NekZoho</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body id="blog-post-page"> <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html">
+        Nek<span class="text-dark">Zoho</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main-nav"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="index.html" data-lang-key="nav.home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="about.html" data-lang-key="nav.about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="services.html" data-lang-key="nav.services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="blogs.html" data-lang-key="nav.blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="contact.html" data-lang-key="nav.contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-lg-auto">
+          <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme" title="Toggle theme">
+            </button>
+          
+          <div id="language-toggle" class="d-flex align-items-center ms-2">
+            <button class="btn btn-sm btn-primary py-0 px-2" data-lang="en" style="font-size: 0.8rem">EN</button>
+            <button class="btn btn-sm btn-outline-secondary py-0 px-2 ms-1" data-lang="nl" style="font-size: 0.8rem">NL</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <main>
+
+    <section class="section-padding fade-in-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class_name="col-lg-8">
+
+            <div id="blog-post-content">
+              <div class="text-center mb-5">
+                <h1 id="blog-title" class="display-5 fw-bold text-dark mb-3">Loading Post...</h1>
+                <p id="blog-date" class="text-muted"></p>
+              </div>
+
+              <img
+                id="blog-image"
+                src="" 
+                alt="Loading..."
+                class="img-fluid rounded-3 shadow-sm mb-5 w-100"
+                style="max-height: 400px; object-fit: cover"
+              />
+
+              <div id="blog-content" class="blog-content text-dark fs-5">
+                </div>
+
+              <div class="text-center mt-5">
+                <a href="blogs.html" class="btn btn-outline-primary rounded-pill px-4" data-lang-key="blog.back">
+                  ← Back to Blogs
+                </a>
+              </div>
+            </div>
+
+            <div id="blog-not-found" class="container section-padding text-center" style="display: none;">
+              <h2 data-lang-key="blog.notFoundTitle">Blog Post Not Found</h2>
+              <p data-lang-key="blog.notFoundSubTitle">The blog post you are looking for does not exist.</p>
+              <a href="blogs.html" class="btn btn-primary rounded-pill px-4" data-lang-key="blog.viewAll">
+                View All Blogs
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white pt-3 pb-5">
+    <div class="container">
+      <div class="row g-4 pt-2 pb-3">
+        <div class="col-lg-4 col-md-12">
+          <a class="navbar-brand fw-bold fs-2 text-white text-decoration-none" href="index.html">
+            Nek<span class="text-white-50">Zoho</span>
+          </a>
+          <p class="text-white-50 my-3" data-lang-key="footer.tagline">Empowering businesses through Zoho, Web Development, and Digital Marketing solutions.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-outline-primary btn-circle me-2" data-icon="Globe" data-icon-size="18"></a>
+            <a href="#" class="btn btn-outline-primary btn-circle me-2" data-icon="MessageSquare" data-icon-size="18"></a>
+            <a href="#" class="btn btn-outline-primary btn-circle" data-icon="Calendar" data-icon-size="18"></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.links">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.home">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.about">About</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.services">Services</a></li>
+            <li class="mb-2"><a href="blogs.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.blogs">Blog</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.services">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service1">Zoho Consulting</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service2">Web Development</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service3">Digital Marketing</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service4">CRM/ERP</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service5">Automation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.contact">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2">
+              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Mail" data-icon-size="18"></span>
+              <a href="mailto:info@nekzoho.com" class="text-white-50 text-decoration-none hover-primary">info@nekzoho.com</a>
+            </li>
+            <li class="d-flex mb-2">
+              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Phone" data-icon-size="18"></span>
+              <a href="tel:+1234567890" class="text-white-50 text-decoration-none hover-primary">+1 (234) 567-890</a>
+            </li>
+            <li class="d-flex mb-2">
+              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="MapPin" data-icon-size="18"></span>
+              <span class="text-white-50" data-lang-key="footer.address">123 Business Way, City, State</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-white-50" />
+      <div class="text-center text-white-50 pt-4">
+        <small data-lang-key="footer.copyright">© 2025 NekZoho. All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.395.0/dist/lucide.min.js"></script>
+
+  <script src="locales/en.js"></script>
+  <script src="locales/nl.js"></script>
+  
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
