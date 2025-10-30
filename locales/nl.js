@@ -37,7 +37,7 @@ const translations_nl = {
   "about.point2": "Aangepaste oplossingen voor unieke zakelijke uitdagingen.",
   "about.point3": "Toegewijde ondersteuning en langetermijnpartnerschap.",
   "about.cta": "Ontmoet Ons Team",
-  "about.experience": "10+ Jaar Ervaring",
+  "about.experience": "Jaar Ervaring",
 
   // Services Section
   "services.preTitle": "Onze Expertise",
@@ -199,7 +199,7 @@ const translations_nl = {
   "footer.service4": "CRM/ERP",
   "footer.service5": "Automatisering",
   "footer.address": "123 Business Way, Stad, Staat",
-  "footer.copyright": "© {{year}} NekZoho. Alle Rechten Voorbehouden.",
+  "footer.copyright": "© 2025 NekZoho. Alle Rechten Voorbehouden.",
 
   // About Page
   "pageAbout.title": "Over NekZoho",

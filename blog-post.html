@@ -49,9 +49,28 @@
           <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme" title="Toggle theme">
             </button>
           
-          <div id="language-toggle" class="d-flex align-items-center ms-2">
-            <button class="btn btn-sm btn-primary py-0 px-2" data-lang="en" style="font-size: 0.8rem">EN</button>
-            <button class="btn btn-sm btn-outline-secondary py-0 px-2 ms-1" data-lang="nl" style="font-size: 0.8rem">NL</button>
+          <div class="dropdown" id="language-dropdown">
+            <button
+              class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center"
+              type="button"
+              id="current-lang-btn"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="font-size: 0.8rem"
+            >
+              </button>
+            <ul class="dropdown-menu dropdown-menu-end" id="lang-dropdown" aria-labelledby="current-lang-btn">
+              <li>
+                <button class="dropdown-item" type="button" data-lang="en">
+                  EN
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button" data-lang="nl">
+                  NL
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -112,9 +131,15 @@
           </a>
           <p class="text-white-50 my-3" data-lang-key="footer.tagline">Empowering businesses through Zoho, Web Development, and Digital Marketing solutions.</p>
           <div class="d-flex">
-            <a href="#" class="btn btn-outline-primary btn-circle me-2" data-icon="Globe" data-icon-size="18"></a>
-            <a href="#" class="btn btn-outline-primary btn-circle me-2" data-icon="MessageSquare" data-icon-size="18"></a>
-            <a href="#" class="btn btn-outline-primary btn-circle" data-icon="Calendar" data-icon-size="18"></a>
+            <a href="#" class="btn btn-outline-primary btn-circle me-2">
+              <span data-icon="Globe" data-icon-size="18"></span>
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-circle me-2">
+              <span data-icon="MessageSquare" data-icon-size="18"></span>
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-circle">
+              <span data-icon="Calendar" data-icon-size="18"></span>
+            </a>
           </div>
         </div>
 
@@ -168,7 +193,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.395.0/dist/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.395.0/dist/umd/lucide.min.js"></script>
 
   <script src="locales/en.js"></script>
   <script src="locales/nl.js"></script>
