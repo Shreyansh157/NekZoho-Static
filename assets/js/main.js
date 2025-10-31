@@ -127,30 +127,174 @@ document.addEventListener("DOMContentLoaded", () => {
    * 3. FADE-IN ANIMATION ON SCROLL
    * Uses IntersectionObserver to add 'is-visible' class.
    */
-  (function initScrollAnimation() {
-    const animatedSections = document.querySelectorAll(".fade-in-section");
-    if (!("IntersectionObserver" in window)) {
-      // Fallback for old browsers
-      animatedSections.forEach((section) => section.classList.add("is-visible"));
+  // (function initScrollAnimation() {
+  //   const animatedSections = document.querySelectorAll(".fade-in-section");
+  //   if (!("IntersectionObserver" in window)) {
+  //     // Fallback for old browsers
+  //     animatedSections.forEach((section) => section.classList.add("is-visible"));
+  //     return;
+  //   }
+
+  //   const observer = new IntersectionObserver(
+  //     (entries, observer) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("is-visible");
+  //           observer.unobserve(entry.target); // Animate only once
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.1, // Trigger when 10% of the section is visible
+  //     }
+  //   );
+
+  //   animatedSections.forEach((section) => {
+  //     observer.observe(section);
+  //   });
+  // })();
+
+  /**
+   * 3. GSAP ANIMATIONS
+   * Replaces the old IntersectionObserver with GSAP & ScrollTrigger.
+   */
+  (function initGsapAnimations() {
+    // Ensure GSAP and ScrollTrigger are loaded
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+      console.error("GSAP or ScrollTrigger not loaded.");
       return;
     }
 
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target); // Animate only once
-          }
-        });
-      },
-      {
-        threshold: 0.1, // Trigger when 10% of the section is visible
-      }
-    );
+    // Register the plugin
+    gsap.registerPlugin(ScrollTrigger);
 
-    animatedSections.forEach((section) => {
-      observer.observe(section);
+    // --- 1. Hero Section (On Load) ---
+    gsap.from("#home-hero h1", { duration: 1, y: 50, opacity: 0, delay: 0.2, ease: "power3.out" });
+    gsap.from("#home-hero p", { duration: 1, y: 50, opacity: 0, delay: 0.4, ease: "power3.out" });
+    gsap.from("#home-hero .btn", { duration: 1, y: 50, opacity: 0, delay: 0.6, stagger: 0.2, ease: "power3.out" });
+
+    // --- 2. Generic Header Animation ---
+    // We can animate all section headers as they scroll into view
+    const sectionHeaders = document.querySelectorAll(".section-padding .text-center, #about h2");
+    sectionHeaders.forEach((header) => {
+      gsap.from(header, {
+        scrollTrigger: {
+          trigger: header,
+          start: "top 85%", // Trigger when 85% from the top
+          toggleActions: "play none none none", // Play animation once
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      });
+    });
+
+    // --- 3. About Section (#about) ---
+    gsap.from("#about .col-lg-6:first-child", {
+      // Text column
+      scrollTrigger: { trigger: "#about", start: "top 80%" },
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+    gsap.from("#about .about-image-col", {
+      // Image column
+      scrollTrigger: { trigger: "#about", start: "top 80%" },
+      x: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+    gsap.from(".about-experience-box", {
+      // Pop-up box
+      scrollTrigger: { trigger: ".about-image-col", start: "top 60%" },
+      scale: 0.5,
+      opacity: 0,
+      duration: 0.5,
+      delay: 0.5,
+      ease: "back.out(1.7)",
+    });
+
+    // --- 4. Services Section (#services) ---
+    gsap.from(".service-tabs .nav-link", {
+      // Stagger tabs
+      scrollTrigger: { trigger: ".service-tabs", start: "top 80%" },
+      x: -50,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.1,
+      ease: "power2.out",
+    });
+    gsap.from(".tab-content", {
+      // Fade in content
+      scrollTrigger: { trigger: ".tab-content", start: "top 80%" },
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      ease: "power2.out",
+    });
+
+    // --- 5. Process Section (#process) ---
+    gsap.from(".timeline-item", {
+      // Stagger timeline items
+      scrollTrigger: { trigger: ".process-timeline", start: "top 80%" },
+      y: 50,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.2,
+      ease: "power3.out",
+    });
+
+    // --- 6. Industries Section (#industries) ---
+    gsap.from("#industries .scroller", {
+      // The scroller itself
+      scrollTrigger: { trigger: "#industries .scroller", start: "top 90%" },
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+
+    // --- 7. Testimonials Section (#testimonials) ---
+    gsap.from("#testimonialCarousel", {
+      // The carousel
+      scrollTrigger: { trigger: "#testimonialCarousel", start: "top 80%" },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+
+    // --- 8. Why Choose Us Section (#why-choose-us) ---
+    gsap.from("#why-choose-us .row.g-4 > .col-lg-4", {
+      // Stagger features
+      scrollTrigger: { trigger: "#why-choose-us .row.g-4", start: "top 80%" },
+      y: 50,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: "power3.out",
+    });
+
+    // --- 9. Blog Section (#blog) ---
+    gsap.from("#blog .row.g-4 > .col-lg-4", {
+      // Stagger blog cards
+      scrollTrigger: { trigger: "#blog .row.g-4", start: "top 80%" },
+      y: 50,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: "power3.out",
+    });
+
+    // --- 10. CTA Section (#contact) ---
+    gsap.from("#contact", {
+      // Final CTA
+      scrollTrigger: { trigger: "#contact", start: "top 90%" },
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
     });
   })();
 
