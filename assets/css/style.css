@@ -338,3 +338,352 @@ section:not([class*="bg-"]):not(.navbar) {
   padding: 2px 0;
   border-radius: 4px;
 }
+/* 8. HERO REDESIGN (Original Rotating Gradient) */
+#home-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #0d6efd, #0d6efd, #000030, #02021c);
+  background-size: 400% 400%;
+  animation: heroGradient 10s linear infinite;
+}
+
+@keyframes heroGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Make sure content is on top */
+#home-hero .container,
+#home-hero .hero-scroll-down {
+  position: relative;
+  z-index: 2;
+}
+
+#home-hero .btn-outline-light {
+  --bs-btn-hover-color: #000;
+  border-width: 2px; /* Make outline button match */
+}
+
+.hero-scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+/* 9. INFINITE SCROLLER (Logos/Industries) */
+.scroller {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller__inner {
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+.scroller[data-speed="fast"] .scroller__inner {
+  animation-duration: 15s;
+}
+
+.scroller[data-direction="right"] .scroller__inner {
+  animation-direction: reverse;
+}
+
+.industry-item {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 99px;
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  font-weight: 500;
+  color: var(--bs-body-color);
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* 10. ABOUT SECTION (Overlap) */
+.about-image-col {
+  position: relative;
+}
+
+.about-image {
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+
+.about-image-col:hover .about-image {
+  transform: scale(1.03);
+}
+
+.about-experience-box {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  z-index: 10;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--bs-primary-rgb), 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--bs-primary-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--bs-primary-rgb), 0);
+  }
+}
+
+/* 11. SERVICES TABS */
+.service-tabs .nav-link {
+  font-size: 1.1rem;
+  color: var(--bs-body-color);
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--bs-border-color);
+  background-color: var(--bs-body-bg);
+  transition: all 0.3s ease;
+}
+
+.service-tabs .nav-link:hover {
+  background-color: var(--bs-tertiary-bg);
+  transform: translateX(5px);
+}
+
+.service-tabs .nav-link.active {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border-color: var(--bs-primary);
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-primary-rgb), 0.3);
+  transform: translateX(10px);
+}
+
+.service-tabs .nav-link.active svg {
+  color: #fff !important;
+}
+
+/* 12. PROCESS TIMELINE */
+.process-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--bs-primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 5;
+}
+
+/* The vertical line */
+.process-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(1rem - 2px);
+  bottom: 0;
+  width: 4px;
+  background-color: var(--bs-tertiary-bg);
+  z-index: 1;
+}
+
+.timeline-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 2.5rem; /* Stop line at the dot */
+  left: calc(1.25rem - 2px);
+  bottom: 0;
+  width: 4px;
+  background-color: var(--bs-body-bg); /* Cover the line below the last dot */
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .process-timeline {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .timeline-item {
+    flex: 1;
+    padding-left: 0;
+    padding-top: 3.5rem;
+    text-align: center;
+  }
+  .timeline-dot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* The horizontal line */
+  .process-timeline::before {
+    top: calc(1.25rem - -16px);
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: 4px;
+    width: 100%;
+  }
+  .timeline-item:last-child::after {
+    display: none; /* No need to cover line on desktop */
+  }
+}
+
+/* 13. TESTIMONIAL CAROUSEL */
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+  width: 5%;
+}
+
+/* 14. HOVER LINK (for footer) */
+.hover-primary:hover {
+  color: var(--bs-primary) !important;
+}
+/* 11. SERVICES TABS (Image Size Fix) */
+.service-tabs .tab-pane img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.25rem; /* Adds a nice subtle border radius */
+}
+
+@media (max-width: 991px) {
+  .service-tabs .tab-pane img {
+    height: 250px; /* A more appropriate height for stacked mobile view */
+  }
+}
+
+/* 12. PROCESS TIMELINE (Line Alignment Fix) */
+@media (min-width: 992px) {
+  .timeline-item {
+    padding-top: 0; /* Remove padding from the item */
+  }
+
+  .timeline-item .timeline-content {
+    padding-top: 3.5rem; /* Add padding to the content inside */
+  }
+
+  .timeline-dot {
+    top: calc(1.25rem - 2px); /* Align dot with the line */
+  }
+}
+/* 15. POLISHING FIXES */
+
+/* 1. Fix: Make Process Timeline line visible */
+.process-timeline::before {
+  /* This changes the line from very-light-gray to a more visible border-gray */
+  background-color: var(--bs-border-color);
+}
+
+/* 2. Fix: Make Testimonial card visible in light mode */
+[data-bs-theme="light"] .testimonial-card {
+  /* This changes the card from white to a very-light-gray */
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color);
+}
+/* 16. HERO BUTTON THEME FIX */
+
+.btn-hero-primary {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border: 2px solid #fff;
+  backdrop-filter: blur(5px); /* Adds a cool 'glass' effect */
+  transition: all 0.3s ease;
+}
+
+.btn-hero-primary:hover,
+.btn-hero-primary:focus {
+  color: var(--bs-primary); /* Blue text on hover */
+  background-color: #fff; /* Solid white bg on hover */
+  border-color: #fff;
+}
+
+/* Also make the outline button's border thicker to match */
+#home-hero .btn-outline-light {
+  border-width: 2px;
+}
+
+/* 17. CUSTOM SCROLLBAR (Updated) */
+
+/* Firefox: Use default width */
+html {
+  scrollbar-width: auto; /* 'auto' is the default, 'thin' is removed */
+  scrollbar-color: var(--bs-primary) var(--bs-tertiary-bg);
+}
+
+/* Chrome, Edge, Safari, and other WebKit browsers */
+::-webkit-scrollbar {
+  /* Use a more standard default width */
+  width: 16px;
+}
+
+/* Explicitly hide the up/down arrows */
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bs-tertiary-bg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bs-primary);
+  border-radius: 10px;
+  /* Add a border so the thumb doesn't look too bulky */
+  border: 4px solid var(--bs-tertiary-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bs-primary);
+  filter: brightness(1.2);
+}

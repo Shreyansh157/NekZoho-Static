@@ -7,15 +7,15 @@
   
   <title data-lang-key="title.home">NekZoho | Zoho Authorized Partner | Neksoft Consultancy Services</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html">
+      <a class="navbar-brand pt-2 pb-0 fw-bold fs-3 text-primary" href="index.html">
         Nek<span class="text-dark">Zoho</span>
       </a>
       <button
@@ -37,7 +37,7 @@
           <li class="nav-item">
             <a class="nav-link fw-medium" href="about.html" data-lang-key="nav.about">About</a>
           </li>
-          <li class="nav-item">
+          <li class_name="nav-item">
             <a class="nav-link fw-medium" href="services.html" data-lang-key="nav.services">Services</a>
           </li>
           <li class="nav-item">
@@ -74,43 +74,60 @@
               </li>
             </ul>
           </div>
-        </div>
+          </div>
       </div>
     </nav>
 
   <main>
 
-    <section id="home" class="bg-light py-5 pt-0">
-      <div class="container py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-lg-6">
-            <p class="text-primary fw-semibold text-uppercase mb-3" data-lang-key="hero.preTitle">Empowering Your Business Growth</p>
-            <h1 class="display-4 fw-bold mb-4 text-dark" data-lang-key="hero.title">
-              Streamline, Automate, <br /> and Scale Your Enterprise.
-            </h1>
-            <p class="lead text-muted mb-4" style="max-width: 700px" data-lang-key="hero.subTitle">
-              NekZoho is your trusted partner for cutting-edge Zoho Consulting, bespoke Web Development, and data-driven Digital Marketing strategies.
-            </p>
-            <div>
-              <a href="services.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 me-lg-3 mb-3 w-100 w-lg-auto" data-lang-key="hero.ctaPrimary">
-                Start Your Transformation
-              </a>
-              <a href="#process" class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3 w-100 w-lg-auto" data-lang-key="hero.ctaSecondary">
-                Discover Our Solutions
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 d-none d-lg-block">
-            <img src="assets/images/hero-dashboard.png" alt="NekZoho Dashboard" class="img-fluid rounded-3 shadow-lg" />
-          </div>
+    <section id="home-hero" class="d-flex align-items-center min-vh-100">
+      <div class="container text-center text-white">
+        <h1 class="display-3 fw-bold mb-4 text-white" data-lang-key="hero.title">
+          Streamline, Automate, <br /> and Scale Your Enterprise.
+        </h1>
+        <p class="lead text-white mb-4 mx-auto" style="max-width: 700px" data-lang-key="hero.subTitle">
+          NekZoho is your trusted partner for cutting-edge Zoho Consulting, bespoke Web Development, and data-driven Digital Marketing strategies.
+        </p>
+        <div class="d-flex flex-column flex-lg-row justify-content-center">
+          <a href="services.html" class="btn btn-hero-primary btn-lg rounded-pill px-5 py-3 me-lg-3 mb-3 mb-lg-0 w-100 w-lg-auto" data-lang-key="hero.ctaPrimary">
+            Start Your Transformation
+          </a>
+          <a href="#process" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 w-100 w-lg-auto" data-lang-key="hero.ctaSecondary">
+            Discover Our Solutions
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll-down text-decoration-none" aria-label="Scroll down">
+        <span data-icon="ArrowDown" data-icon-size="24"></span>
+      </a>
+    </section>
+
+    <section id="trusted-by" class="py-5 bg-light">
+      <div class="container">
+        <h6 class="text-center text-muted text-uppercase small fw-bold mb-4">Trusted by innovative companies worldwide</h6>
+        <div class="scroller" data-speed="slow">
+          <ul class="scroller__inner list-unstyled d-flex">
+            <li class="fs-4 fw-bold text-muted mx-4">ClientLogo</li>
+            <li class="fs-4 fw-bold text-muted mx-4">TechCorp</li>
+            <li class="fs-4 fw-bold text-muted mx-4">InnovateCo</li>
+            <li class="fs-4 fw-bold text-muted mx-4">Quantum</li>
+            <li class="fs-4 fw-bold text-muted mx-4">Nexus</li>
+            <li class="fs-4 fw-bold text-muted mx-4">Apex</li>
+            <li class="fs-4 fw-bold text-muted mx-4">Synergy</li>
+            <li class="fs-4 fw-bold text-muted mx-4">Momentum</li>
+            <li class="fs-4 fw-bold text-muted mx-4">ClientLogo</li>
+            <li class="fs-4 fw-bold text-muted mx-4">TechCorp</li>
+            <li class="fs-4 fw-bold text-muted mx-4">InnovateCo</li>
+            <li class="fs-4 fw-bold text-muted mx-4">Quantum</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section-padding fade-in-section">
+    <section id="about" class="section-padding overflow-hidden">
       <div class="container">
         <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 fade-in-section">
             <p class="text-primary fw-semibold text-uppercase mb-2" data-lang-key="about.preTitle">Our Vision</p>
             <h2 class="display-5 fw-bold text-dark mb-4" data-lang-key="about.title">About NekZoho</h2>
             <p class="lead text-muted mb-4" data-lang-key="about.lead">
@@ -122,31 +139,26 @@
             <ul class="list-unstyled text-dark fs-5">
               <li class="mb-2 d-flex">
                 <span class="text-primary me-2 mt-1 flex-shrink-0" data-icon="CheckCircle" data-icon-size="24"></span>
-                <span data-lang-key="about.point1">Zoho Authorized Partner with proven expertise.</span>
+                <span class="ms-2" data-lang-key="about.point1">Zoho Authorized Partner with proven expertise.</span>
               </li>
               <li class="mb-2 d-flex">
                 <span class="text-primary me-2 mt-1 flex-shrink-0" data-icon="CheckCircle" data-icon-size="24"></span>
-                <span data-lang-key="about.point2">Custom solutions for unique business challenges.</span>
+                <span class="ms-2" data-lang-key="about.point2">Custom solutions for unique business challenges.</span>
               </li>
               <li class="mb-2 d-flex">
                 <span class="text-primary me-2 mt-1 flex-shrink-0" data-icon="CheckCircle" data-icon-size="24"></span>
-                <span data-lang-key="about.point3">Dedicated support and long-term partnership.</span>
+                <span class="ms-2" data-lang-key="about.point3">Dedicated support and long-term partnership.</span>
               </li>
             </ul>
             <a href="about.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 mt-3" data-lang-key="about.cta">
               Meet Our Team
             </a>
           </div>
-          <div class="col-lg-6">
-            <div class="position-relative">
-              <img src="assets/images/about-team.png" alt="NekZoho Team" class="img-fluid rounded-3 shadow-lg" />
-              <div
-                class="bg-primary text-white p-4 rounded-3 shadow-lg position-absolute d-none d-lg-block"
-                style="bottom: -2rem; right: -2rem"
-              >
-                <h3 class="fw-bold mb-0 text-white">10+</h3>
-                <p class="mb-0 fs-5" data-lang-key="about.experience">Years Experience</p>
-              </div>
+          <div class="col-lg-6 about-image-col fade-in-section">
+            <img src="assets/images/about-team.png" alt="NekZoho Team" class="img-fluid rounded-3 shadow-lg about-image" />
+            <div class="about-experience-box bg-primary text-white p-4 rounded-3 shadow-lg">
+              <h3 class="fw-bold mb-0 text-white">10+</h3>
+              <p class="mb-0 fs-5" data-lang-key="about.experience">Years Experience</p>
             </div>
           </div>
         </div>
@@ -162,76 +174,68 @@
             <p class="lead text-muted mt-3" data-lang-key="services.subTitle">We combine technical mastery with strategic insight to deliver impactful results across various digital domains.</p>
           </div>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 p-4 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column">
-                <span class="text-primary mb-3" data-icon="LayoutDashboard" data-icon-size="40"></span>
-                <h3 class="card-title fs-4 fw-bold mb-3" data-lang-key="services.s1Title">Zoho Consulting & Customization</h3>
-                <p class="card-text text-muted flex-grow-1" data-lang-key="services.s1Desc">Optimize your business with tailored Zoho solutions, from initial setup to advanced workflow automation.</p>
-                <a href="services.html" class="text-primary fw-semibold d-inline-flex align-items-center mt-auto" data-lang-key="services.learnMore">
-                  Learn More <span data-icon="ArrowRight" data-icon-size="16" class="ms-1"></span>
-                </a>
-              </div>
+        
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="nav flex-column nav-pills service-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link text-start p-4 active" id="v-pills-s1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-s1" type="button" role="tab" aria-controls="v-pills-s1" aria-selected="true">
+                <span data-icon="LayoutDashboard" data-icon-size="24" class="me-3"></span>
+                <strong data-lang-key="services.s1Title">Zoho Consulting & Customization</strong>
+              </button>
+              <button class="nav-link text-start p-4" id="v-pills-s2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-s2" type="button" role="tab" aria-controls="v-pills-s2" aria-selected="false">
+                <span data-icon="Code" data-icon-size="24" class="me-3"></span>
+                <strong data-lang-key="services.s2Title">Bespoke Web & App Development</strong>
+              </button>
+              <button class="nav-link text-start p-4" id="v-pills-s3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-s3" type="button" role="tab" aria-controls="v-pills-s3" aria-selected="false">
+                <span data-icon="BarChart" data-icon-size="24" class="me-3"></span>
+                <strong data-lang-key="services.s3Title">Results-Driven Digital Marketing</strong>
+              </button>
+              <button class="nav-link text-start p-4" id="v-pills-s4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-s4" type="button" role="tab" aria-controls="v-pills-s4" aria-selected="false">
+                <span data-icon="Layers" data-icon-size="24" class="me-3"></span>
+                <strong data-lang-key="services.s4Title">ERP & CRM Implementation</strong>
+              </button>
+              <button class="nav-link text-start p-4" id="v-pills-s5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-s5" type="button" role="tab" aria-controls="v-pills-s5" aria-selected="false">
+                <span data-icon="Zap" data-icon-size="24" class="me-3"></span>
+                <strong data-lang-key="services.s5Title">Business Process Automation</strong>
+              </button>
+              <button class="nav-link text-start p-4" id="v-pills-s6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-s6" type="button" role="tab" aria-controls="v-pills-s6" aria-selected="false">
+                <span data-icon="Cloud" data-icon-size="24" class="me-3"></span>
+                <strong data-lang-key="services.s6Title">Cloud Solutions & Migration</strong>
+              </button>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 p-4 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column">
-                <span class="text-primary mb-3" data-icon="Code" data-icon-size="40"></span>
-                <h3 class="card-title fs-4 fw-bold mb-3" data-lang-key="services.s2Title">Bespoke Web & App Development</h3>
-                <p class="card-text text-muted flex-grow-1" data-lang-key="services.s2Desc">Responsive, high-performance websites and applications using modern frameworks like React.</p>
-                <a href="services.html" class="text-primary fw-semibold d-inline-flex align-items-center mt-auto" data-lang-key="services.learnMore">
-                  Learn More <span data-icon="ArrowRight" data-icon-size="16" class="ms-1"></span>
-                </a>
+          
+          <div class="col-lg-8">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active p-4" id="v-pills-s1" role="tabpanel" aria-labelledby="v-pills-s1-tab">
+                <h3 class="fw-bold mb-3" data-lang-key="services.s1Title">Zoho Consulting & Customization</h3>
+                <p class="text-muted" data-lang-key="services.s1Desc">Optimize your business with tailored Zoho solutions, from initial setup to advanced workflow automation.</p>
+                <img src="assets/images/zoho-services.png" alt="Zoho Dashboard" class="img-fluid rounded-3 mt-4" />
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 p-4 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column">
-                <span class="text-primary mb-3" data-icon="BarChart" data-icon-size="40"></span>
-                <h3 class="card-title fs-4 fw-bold mb-3" data-lang-key="services.s3Title">Results-Driven Digital Marketing</h3>
-                <p class="card-text text-muted flex-grow-1" data-lang-key="services.s3Desc">Elevate your brand with comprehensive SEO, PPC, and social media management strategies.</p>
-                <a href="services.html" class="text-primary fw-semibold d-inline-flex align-items-center mt-auto" data-lang-key="services.learnMore">
-                  Learn More <span data-icon="ArrowRight" data-icon-size="16" class="ms-1"></span>
-                </a>
+              <div class="tab-pane fade p-4" id="v-pills-s2" role="tabpanel" aria-labelledby="v-pills-s2-tab">
+                <h3 class="fw-bold mb-3" data-lang-key="services.s2Title">Bespoke Web & App Development</h3>
+                <p class="text-muted" data-lang-key="services.s2Desc">Responsive, high-performance websites and applications using modern frameworks like React.</p>
+                <img src="assets/images/app-dev.avif" alt="Web Development" class="img-fluid rounded-3 mt-4" />
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 p-4 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column">
-                <span class="text-primary mb-3" data-icon="Layers" data-icon-size="40"></span>
-                <h3 class="card-title fs-4 fw-bold mb-3" data-lang-key="services.s4Title">ERP & CRM Implementation</h3>
-                <p class="card-text text-muted flex-grow-1" data-lang-key="services.s4Desc">Integrate and optimize enterprise systems that centralize data and improve efficiency.</p>
-                <a href="services.html" class="text-primary fw-semibold d-inline-flex align-items-center mt-auto" data-lang-key="services.learnMore">
-                  Learn More <span data-icon="ArrowRight" data-icon-size="16" class="ms-1"></span>
-                </a>
+              <div class="tab-pane fade p-4" id="v-pills-s3" role="tabpanel" aria-labelledby="v-pills-s3-tab">
+                <h3 class="fw-bold mb-3" data-lang-key="services.s3Title">Results-Driven Digital Marketing</h3>
+                <p class="text-muted" data-lang-key="services.s3Desc">Elevate your brand with comprehensive SEO, PPC, and social media management strategies.</p>
+                <img src="assets/images/digi-marketing.jpg" alt="Digital Marketing" class="img-fluid rounded-3 mt-4" />
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 p-4 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column">
-                <span class="text-primary mb-3" data-icon="Zap" data-icon-size="40"></span>
-                <h3 class="card-title fs-4 fw-bold mb-3" data-lang-key="services.s5Title">Business Process Automation</h3>
-                <p class="card-text text-muted flex-grow-1" data-lang-key="services.s5Desc">Automate repetitive tasks and complex workflows to boost productivity and reduce operational costs.</p>
-                <a href="services.html" class="text-primary fw-semibold d-inline-flex align-items-center mt-auto" data-lang-key="services.learnMore">
-                  Learn More <span data-icon="ArrowRight" data-icon-size="16" class="ms-1"></span>
-                </a>
+              <div class="tab-pane fade p-4" id="v-pills-s4" role="tabpanel" aria-labelledby="v-pills-s4-tab">
+                <h3 class="fw-bold mb-3" data-lang-key="services.s4Title">ERP & CRM Implementation</h3>
+                <p class="text-muted" data-lang-key="services.s4Desc">Integrate and optimize enterprise systems that centralize data and improve efficiency.</p>
+                <img src="assets/images/crm-image.avif" alt="CRM" class="img-fluid rounded-3 mt-4" />
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 p-4 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column">
-                <span class="text-primary mb-3" data-icon="Cloud" data-icon-size="40"></span>
-                <h3 class="card-title fs-4 fw-bold mb-3" data-lang-key="services.s6Title">Cloud Solutions & Migration</h3>
-                <p class="card-text text-muted flex-grow-1" data-lang-key="services.s6Desc">Seamlessly transition your infrastructure and applications to the cloud for security and scalability.</p>
-                <a href="services.html" class="text-primary fw-semibold d-inline-flex align-items-center mt-auto" data-lang-key="services.learnMore">
-                  Learn More <span data-icon="ArrowRight" data-icon-size="16" class="ms-1"></span>
-                </a>
+              <div class="tab-pane fade p-4" id="v-pills-s5" role="tabpanel" aria-labelledby="v-pills-s5-tab">
+                <h3 class="fw-bold mb-3" data-lang-key="services.s5Title">Business Process Automation</h3>
+                <p class="text-muted" data-lang-key="services.s5Desc">Automate repetitive tasks and complex workflows to boost productivity and reduce operational costs.</p>
+                <img src="assets/images/business-auto.avif" alt="Automation" class="img-fluid rounded-3 mt-4" height="500px"/>
+              </div>
+              <div class="tab-pane fade p-4" id="v-pills-s6" role="tabpanel" aria-labelledby="v-pills-s6-tab">
+                <h3 class="fw-bold mb-3" data-lang-key="services.s6Title">Cloud Solutions & Migration</h3>
+                <p class="text-muted" data-lang-key="services.s6Desc">Seamlessly transition your infrastructure and applications to the cloud for security and scalability.</p>
+                <img src="assets/images/cloud-service.jpg" alt="Cloud" class="img-fluid rounded-3 mt-4" />
               </div>
             </div>
           </div>
@@ -239,7 +243,7 @@
       </div>
     </section>
 
-    <section id="process" class="section-padding fade-in-section">
+    <section id="process" class="section-padding">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-8">
@@ -248,73 +252,50 @@
             <p class="lead text-muted mt-3" data-lang-key="process.subTitle">Our structured methodology ensures transparency, efficiency, and exceptional results at every stage.</p>
           </div>
         </div>
-        <div class="row g-5">
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle fw-bold fs-4" style="width: 4rem; height: 4rem">01</div>
-              </div>
-              <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="process.step1Title">Discovery & Analysis</h3>
-                <p class="text-muted" data-lang-key="process.step1Desc">We begin by deeply understanding your business, challenges, and objectives.</p>
-              </div>
+
+        <div class="process-timeline">
+          <div class="timeline-item fade-in-section">
+            <div class="timeline-content">
+              <div class="timeline-dot">01</div>
+              <h3 class="fs-4 fw-bold" data-lang-key="process.step1Title">Discovery & Analysis</h3>
+              <p class="text-muted" data-lang-key="process.step1Desc">We begin by deeply understanding your business, challenges, and objectives.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle fw-bold fs-4" style="width: 4rem; height: 4rem">02</div>
-              </div>
-              <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="process.step2Title">Strategy & Planning</h3>
-                <p class="text-muted" data-lang-key="process.step2Desc">We craft a detailed strategy and implementation plan, outlining solutions and timelines.</p>
-              </div>
+          <div class="timeline-item fade-in-section">
+            <div class="timeline-content">
+              <div class="timeline-dot">02</div>
+              <h3 class="fs-4 fw-bold" data-lang-key="process.step2Title">Strategy & Planning</h3>
+              <p class="text-muted" data-lang-key="process.step2Desc">We craft a detailed strategy and implementation plan, outlining solutions and timelines.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle fw-bold fs-4" style="width: 4rem; height: 4rem">03</div>
-              </div>
-              <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="process.step3Title">Development & Customization</h3>
-                <p class="text-muted" data-lang-key="process.step3Desc">Our experts build, configure, and customize your solutions, from Zoho to websites.</p>
-              </div>
+          <div class="timeline-item fade-in-section">
+            <div class="timeline-content">
+              <div class="timeline-dot">03</div>
+              <h3 class="fs-4 fw-bold" data-lang-key="process.step3Title">Development & Customization</h3>
+              <p class="text-muted" data-lang-key="process.step3Desc">Our experts build, configure, and customize your solutions, from Zoho to websites.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle fw-bold fs-4" style="width: 4rem; height: 4rem">04</div>
-              </div>
-              <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="process.step4Title">Testing & Deployment</h3>
-                <p class="text-muted" data-lang-key="process.step4Desc">Rigorous testing ensures flawless performance before we launch your new solutions.</p>
-              </div>
+          <div class="timeline-item fade-in-section">
+            <div class="timeline-content">
+              <div class="timeline-dot">04</div>
+              <h3 class="fs-4 fw-bold" data-lang-key="process.step4Title">Testing & Deployment</h3>
+              <p class="text-muted" data-lang-key="process.step4Desc">Rigorous testing ensures flawless performance before we launch your new solutions.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle fw-bold fs-4" style="width: 4rem; height: 4rem">05</div>
-              </div>
-              <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="process.step5Title">Training & Support</h3>
-                <p class="text-muted" data-lang-key="process.step5Desc">We offer comprehensive training for your team and continuous support to ensure success.</p>
-              </div>
+          <div class="timeline-item fade-in-section">
+            <div class="timeline-content">
+              <div class="timeline-dot">05</div>
+              <h3 class="fs-4 fw-bold" data-lang-key="process.step5Title">Training & Support</h3>
+              <p class="text-muted" data-lang-key="process.step5Desc">We offer comprehensive training for your team and continuous support to ensure success.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle fw-bold fs-4" style="width: 4rem; height: 4rem">06</div>
-              </div>
-              <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="process.step6Title">Optimization & Growth</h3>
-                <p class="text-muted" data-lang-key="process.step6Desc">We monitor performance and optimize to ensure sustained growth and success.</p>
-              </div>
+          <!-- <div class="timeline-item fade-in-section">
+            <div class="timeline-content">
+              <div class="timeline-dot">06</div>
+              <h3 class="fs-4 fw-bold" data-lang-key="process.step6Title">Optimization & Growth</h3>
+              <p class="text-muted" data-lang-key="process.step6Desc">We monitor performance and optimize to ensure sustained growth and success.</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -328,104 +309,26 @@
             <p class="lead text-muted mt-3" data-lang-key="industries.subTitle">Our solutions are crafted to address the unique challenges and opportunities within diverse market sectors.</p>
           </div>
         </div>
-        <div class="row g-4 text-center">
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="ShoppingBag" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i1">E-commerce & Retail</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="Truck" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i2">Logistics</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="Building2" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i3">Real Estate</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="HeartHandshake" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i4">Non-Profit</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="School" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i5">Education</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="Utensils" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i6">Hospitality</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="Factory" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i7">Manufacturing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="Microscope" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i8">Healthcare</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="BookOpen" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i9">Publishing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="UserCheck" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i10">Consulting</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="DollarSign" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i11">Financial</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <div class="card h-100 p-3 shadow-sm border-0 service-card">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <span class="text-primary mb-3" data-icon="HardHat" data-icon-size="40"></span>
-                <h5 class="fs-6 fw-semibold" data-lang-key="industries.i12">Construction</h5>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="scroller" data-speed="fast" data-direction="right">
+        <ul class="scroller__inner list-unstyled d-flex">
+          <li class="industry-item" data-lang-key="industries.i1">E-commerce & Retail</li>
+          <li class="industry-item" data-lang-key="industries.i2">Logistics</li>
+          <li class="industry-item" data-lang-key="industries.i3">Real Estate</li>
+          <li class="industry-item" data-lang-key="industries.i4">Non-Profit</li>
+          <li class="industry-item" data-lang-key="industries.i5">Education</li>
+          <li class="industry-item" data-lang-key="industries.i6">Hospitality</li>
+          <li class="industry-item" data-lang-key="industries.i7">Manufacturing</li>
+          <li class="industry-item" data-lang-key="industries.i8">Healthcare</li>
+          <li class="industry-item" data-lang-key="industries.i9">Publishing</li>
+          <li class="industry-item" data-lang-key="industries.i10">Consulting</li>
+          <li class="industry-item" data-lang-key="industries.i11">Financial</li>
+          <li class="industry-item" data-lang-key="industries.i12">Construction</li>
+          <li class="industry-item" data-lang-key="industries.i1">E-commerce & Retail</li>
+          <li class="industry-item" data-lang-key="industries.i2">Logistics</li>
+          <li class="industry-item" data-lang-key="industries.i3">Real Estate</li>
+          <li class="industry-item" data-lang-key="industries.i4">Non-Profit</li>
+        </ul>
       </div>
     </section>
 
@@ -437,68 +340,95 @@
             <h2 class="display-5 fw-bold text-dark" data-lang-key="testimonials.title">Trusted by Leading Businesses</h2>
           </div>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0 testimonial-card">
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="text-warning mb-2">
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+        
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card h-100 shadow-sm testimonial-card">
+                    <div class="card-body p-5 text-center">
+                      <div class="text-warning mb-2">
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                      </div>
+                      <p class="fs-5 fst-italic my-3" data-lang-key="testimonials.t1quote">
+                        "NekZoho transformed our sales process with Zoho CRM. Their customization was spot-on, and support was exceptional. Highly recommend!"
+                      </p>
+                      <div class="mt-auto">
+                        <h5 class="fw-bold mb-0" data-lang-key="testimonials.t1name">Emily R.</h5>
+                        <small class="text-muted" data-lang-key="testimonials.t1title">Marketing Director, Tech Solutions Inc.</small>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p class="fs-5 fst-italic text-dark my-3 flex-grow-1" data-lang-key="testimonials.t1quote">
-                  "NekZoho transformed our sales process with Zoho CRM. Their customization was spot-on, and support was exceptional. Highly recommend!"
-                </p>
-                <div class="mt-auto">
-                  <h5 class="fw-bold mb-0" data-lang-key="testimonials.t1name">Emily R.</h5>
-                  <small class="text-muted" data-lang-key="testimonials.t1title">Marketing Director, Tech Solutions Inc.</small>
+              </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card h-100 shadow-sm testimonial-card">
+                    <div class="card-body p-5 text-center">
+                      <div class="text-warning mb-2">
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                      </div>
+                      <p class="fs-5 fst-italic my-3" data-lang-key="testimonials.t2quote">
+                        "The new website built by NekZoho is stunning, fast, and incredibly user-friendly. It has significantly boosted our online engagement."
+                      </p>
+                      <div class="mt-auto">
+                        <h5 class="fw-bold mb-0" data-lang-key="testimonials.t2name">David S.</h5>
+                        <small class="text-muted" data-lang-key="testimonials.t2title">CEO, Creative Agency Co.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card h-100 shadow-sm testimonial-card">
+                    <div class="card-body p-5 text-center">
+                      <div class="text-warning mb-2">
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data_name="icon" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                      </div>
+                      <p class="fs-5 fst-italic my-3" data-lang-key="testimonials.t3quote">
+                        "Our digital marketing results have never been better. NekZoho's data-driven approach and transparent reporting gave us confidence and a fantastic ROI."
+                      </p>
+                      <div class="mt-auto">
+                        <h5 class="fw-bold mb-0" data-lang-key="testimonials.t3name">Sarah L.</h5>
+                        <small class="text-muted" data-lang-key="testimonials.t3title">Founder, Eco-Wear Brands</small>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0 testimonial-card">
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="text-warning mb-2">
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                </div>
-                <p class="fs-5 fst-italic text-dark my-3 flex-grow-1" data-lang-key="testimonials.t2quote">
-                  "The new website built by NekZoho is stunning, fast, and incredibly user-friendly. It has significantly boosted our online engagement."
-                </p>
-                <div class="mt-auto">
-                  <h5 class="fw-bold mb-0" data-lang-key="testimonials.t2name">David S.</h5>
-                  <small class="text-muted" data-lang-key="testimonials.t2title">CEO, Creative Agency Co.</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0 testimonial-card">
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="text-warning mb-2">
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                  <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
-                </div>
-                <p class="fs-5 fst-italic text-dark my-3 flex-grow-1" data-lang-key="testimonials.t3quote">
-                  "Our digital marketing results have never been better. NekZoho's data-driven approach and transparent reporting gave us confidence and a fantastic ROI."
-                </p>
-                <div class="mt-auto">
-                  <h5 class="fw-bold mb-0" data-lang-key="testimonials.t3name">Sarah L.</h5>
-                  <small class="text-muted" data-lang-key="testimonials.t3title">Founder, Eco-Wear Brands</small>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span data-icon="ArrowLeft" class="text-primary" data-icon-size="32"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span data-icon="ArrowRight" class="text-primary" data-icon-size="32"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+        
       </div>
     </section>
 
@@ -520,7 +450,7 @@
                 </div>
               </div>
               <div class="ms-4">
-                <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f1Title">Zoho Authorized Partner</h3>
+                <h3 class_name="fs-4 fw-bold" data-lang-key="whyUs.f1Title">Zoho Authorized Partner</h3>
                 <p class="text-muted" data-lang-key="whyUs.f1Desc">Certified experts ensuring best practices and optimized solutions.</p>
               </div>
             </div>
@@ -560,7 +490,7 @@
               </div>
               <div class="ms-4">
                 <h3 class="fs-4 fw-bold" data-lang-key="whyUs.f4Title">Client-Centric Service</h3>
-                <p class="text-muted" data-lang-key="whyUs.f4Desc">Your success is our priority. We offer dedicated support and communication.</p>
+                <p class_name="text-muted" data-lang-key="whyUs.f4Desc">Your success is our priority. We offer dedicated support and communication.</p>
               </div>
             </div>
           </div>
@@ -752,12 +682,12 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.395.0/dist/umd/lucide.min.js"></script>
 
   <script src="locales/en.js"></script>
-  <script src="locales/nl.js"></script>
+  <script src="locales/nl.js"></script>  
   
   <script src="assets/js/main.js"></script>
 

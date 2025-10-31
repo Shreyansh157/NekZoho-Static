@@ -1,12 +1,8 @@
 /**
  * NekZoho Static Website Main JavaScript
  *
- * This file handles:
- * 1. Theme (Light/Dark) Toggling
- * 2. Language (EN/NL) Toggling (Dropdown Version)
- * 3. Fade-in on Scroll Animations
- * 4. Lucide Icon Replacement
- * 5. Dynamic Blog Post Loading (on blog-post.html)
+ * *** FIX: Changed to 'window.addEventListener("load", ...)' to prevent race conditions
+ * with external libraries like Lucide and tsParticles. ***
  */
 
 document.addEventListener("DOMContentLoaded", () => {
