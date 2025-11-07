@@ -168,10 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Register the plugin
     gsap.registerPlugin(ScrollTrigger);
 
+    gsap.fromTo(".hero-background-image", { scale: 1.1 }, { scale: 1, duration: 1.5, ease: "power2.out" });
+
     // --- 1. Hero Section (On Load) ---
-    gsap.from("#home-hero h1", { duration: 1, y: 50, opacity: 0, delay: 0.2, ease: "power3.out" });
-    gsap.from("#home-hero p", { duration: 1, y: 50, opacity: 0, delay: 0.4, ease: "power3.out" });
-    gsap.from("#home-hero .btn", { duration: 1, y: 50, opacity: 0, delay: 0.6, stagger: 0.2, ease: "power3.out" });
+    gsap.from("#new-hero h1", { duration: 1, y: 50, opacity: 0, delay: 0.2, ease: "power3.out" });
+    gsap.from("#new-hero p", { duration: 1, y: 50, opacity: 0, delay: 0.4, ease: "power3.out" });
+    gsap.from("#new-hero .btn", { duration: 1, y: 50, opacity: 0, delay: 0.6, stagger: 0.2, ease: "power3.out" });
 
     // --- 2. Generic Header Animation ---
     // We can animate all section headers as they scroll into view
@@ -218,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // --- 4. Services Section (#services) ---
-    gsap.from(".service-tabs .nav-link", {
+    gsap.from(".service-tabs ", {
       // Stagger tabs
       scrollTrigger: { trigger: ".service-tabs", start: "top 80%" },
       x: -50,
@@ -267,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // --- 8. Why Choose Us Section (#why-choose-us) ---
-    gsap.from("#why-choose-us .row.g-4 > .col-lg-4", {
+    gsap.from("#why-choose-us .row.g-4 > .col-lg-4 .service-card", {
       // Stagger features
       scrollTrigger: { trigger: "#why-choose-us .row.g-4", start: "top 80%" },
       y: 50,
@@ -277,6 +279,15 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power3.out",
     });
 
+    // gsap.from("#services .service-card", {
+    //   // Stagger features
+    //   scrollTrigger: { trigger: "#why-choose-us .row.g-4", start: "top 80%" },
+    //   y: 50,
+    //   opacity: 0,
+    //   duration: 0.6,
+    //   stagger: 0.15,
+    //   ease: "power3.out",
+    // });
     // --- 9. Blog Section (#blog) ---
     gsap.from("#blog .row.g-4 > .col-lg-4", {
       // Stagger blog cards
@@ -294,6 +305,25 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: { trigger: "#contact", start: "top 90%" },
       opacity: 0,
       duration: 1,
+      ease: "power3.out",
+    });
+
+    // Contact Page - Form & Info
+    gsap.from("#contact-page .col-lg-7", {
+      // Form
+      scrollTrigger: { trigger: "#contact-page", start: "top 70%" },
+      x: -50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+    gsap.from("#contact-page .col-lg-5", {
+      // Info
+      scrollTrigger: { trigger: "#contact-page", start: "top 70%" },
+      x: 50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.2,
       ease: "power3.out",
     });
   })();

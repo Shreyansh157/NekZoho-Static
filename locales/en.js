@@ -106,6 +106,18 @@ const translations_en = {
     "Our digital marketing results have never been better. NekZoho's data-driven approach and transparent reporting gave us confidence and a fantastic ROI.",
   "testimonials.t3name": "Sarah L.",
   "testimonials.t3title": "Founder, Eco-Wear Brands",
+  "testimonials.t4quote":
+    "Their Zoho integration completely streamlined our entire workflow, saving us countless hours and boosting overall productivity across the team.",
+  "testimonials.t4name": "John D.",
+  "testimonials.t4title": "COO, Quantum Logistics",
+  "testimonials.t5quote":
+    "The React-based web app NekZoho built is incredibly fast, scalable, and reliable. Our user engagement is up 40%, and customer feedback has been overwhelmingly positive.",
+  "testimonials.t5name": "Maria K.",
+  "testimonials.t5title": "Product Manager, InnovateCo",
+  "testimonials.t6quote":
+    "Our lead generation has tripled since NekZoho took over our digital marketing strategy. The ROI is undeniable, and our brand presence has never been stronger.",
+  "testimonials.t6name": "Kenji T.",
+  "testimonials.t6title": "CEO, Apex Solutions",
 
   // Why Choose Us Section (index.html & about.html)
   "whyUs.preTitle": "Our Edge",
@@ -185,6 +197,12 @@ const translations_en = {
         '<p class="lead mb-4">User experience (UX) and user interface (UI) design are critical for application success. Focusing on the user leads to higher adoption, satisfaction, and retention.</p><h3 class="fw-bold fs-4 mb-3">1. Understand Your Users</h3><p class="mb-4">Conduct user research through interviews, surveys, and persona development to understand user needs, goals, and pain points.</p><h3 class="fw-bold fs-4 mb-3">2. Prioritize Intuitive Navigation</h3><p class="mb-4">Design clear information architecture and navigation patterns. Users should be able to find what they need easily and understand where they are within the application.</p><h3 class="fw-bold fs-4 mb-3">3. Ensure Consistency</h3><p class="mb-4">Maintain consistent design language (colors, typography, button styles, layout) throughout the application to create a cohesive and predictable experience.</p><h3 class="fw-bold fs-4 mb-3">4. Provide Feedback</h3><p class="mb-4">Use visual cues (loading indicators, success messages, error states) to inform users about the system\'s status and the results of their actions.</p><h3 class="fw-bold fs-4 mb-3">5. Iterate Based on Testing</h3><p class="mb-4">Conduct usability testing with real users to identify friction points and areas for improvement. Continuously refine the design based on feedback.</p><p>Investing in user-centric design principles ensures your digital products are not only functional but also enjoyable and effective to use.</p>',
     },
   },
+
+  // Privacy Section
+  "title.privacy": "Privacy Policy & Terms | NekZoho",
+  "pagePrivacy.title": "Privacy Policy & Terms of Service",
+  "pagePrivacy.breadcrumb": "Home / Privacy",
+  "nav.privacy": "Privacy & Terms",
 
   // CTA Section
   "cta.title": "Ready to Elevate Your Business?",

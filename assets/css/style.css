@@ -474,7 +474,7 @@ section:not([class*="bg-"]):not(.navbar) {
   margin-bottom: 0.5rem;
   border: 1px solid var(--bs-border-color);
   background-color: var(--bs-body-bg);
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
 
 .service-tabs .nav-link:hover {
@@ -686,4 +686,133 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--bs-primary);
   filter: brightness(1.2);
+}
+
+/* 18. TESTIMONIAL 3-UP FIX */
+#testimonials .card-body {
+  padding: 1.5rem; /* Reduced padding for 3-up layout */
+  /* transition: all 0.3s ease; */
+}
+
+#testimonials .fs-5 {
+  font-size: 1.1rem !important; /* Slightly smaller text for 3-up */
+}
+/* 19. TESTIMONIAL CAROUSEL CONTROLS */
+#testimonialCarousel .carousel-indicators {
+  bottom: -3.5rem; /* Position them below the cards */
+}
+
+#testimonialCarousel .carousel-indicators [data-bs-target] {
+  background-color: var(--bs-border-color); /* Light gray for inactive */
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  transition: opacity 0.2s ease;
+}
+
+#testimonialCarousel .carousel-indicators .active {
+  background-color: var(--bs-primary); /* Blue for active */
+}
+
+/* Make arrows more responsive on mobile */
+@media (max-width: 767px) {
+  #testimonialCarousel .carousel-control-prev,
+  #testimonialCarousel .carousel-control-next {
+    /* Hide on mobile, as 3-up carousel stacks */
+    display: none;
+  }
+}
+/* 20. TESTIMONIAL ARROW FIX (Wider Spacing) */
+#testimonialCarousel .carousel-control-prev {
+  width: auto; /* Stop it from taking up 15% width */
+  /* Moves the arrow 100% of its own width, plus 2rem of extra space */
+  transform: translateX(calc(-100% - 2rem));
+  display: none; /* Hidden by default for mobile */
+}
+
+#testimonialCarousel .carousel-control-next {
+  width: auto; /* Stop it from taking up 15% width */
+  /* Moves the arrow 100% of its own width, plus 2rem of extra space */
+  transform: translateX(calc(100% + 2rem));
+  display: none; /* Hidden by default for mobile */
+}
+
+/* Show arrows only on large screens (desktops) */
+@media (min-width: 992px) {
+  #testimonialCarousel .carousel-control-prev,
+  #testimonialCarousel .carousel-control-next {
+    display: flex;
+  }
+}
+
+/* Hide on medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #testimonialCarousel .carousel-control-prev,
+  #testimonialCarousel .carousel-control-next {
+    display: none;
+  }
+}
+/* =======================
+   18. NEW HERO SECTION STYLES
+   ======================= */
+
+/* #new-hero {
+  background-image: url("../images/hero-image.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+} */
+
+#new-hero {
+  /* Fallback color */
+  background-color: #0a0f1e;
+  position: relative;
+  overflow: hidden; /* This contains the zoom */
+  color: #fff;
+}
+
+/* This new rule styles the background div */
+.hero-background-image {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Behind the content */
+
+  /* The background image is now on this div */
+  background-image: url("../images/hero-image.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Make sure the text container stays on top */
+#new-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* New Primary Red Button (from reference image) */
+.btn-hero-red {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e63946; /* Strong red from reference */
+  --bs-btn-border-color: #e63946;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d62c3a; /* Darker red on hover */
+  --bs-btn-hover-border-color: #d62c3a;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #c92836;
+  --bs-btn-active-border-color: #c92836;
+  --bs-btn-focus-shadow-rgb: 230, 57, 70;
+  border-width: 2px;
+}
+
+/* Style secondary outline button */
+#new-hero .btn-outline-light {
+  border-width: 2px;
+  --bs-btn-hover-color: #000; /* Black text on hover */
 }

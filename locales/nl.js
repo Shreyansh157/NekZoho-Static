@@ -107,6 +107,15 @@ const translations_nl = {
     "[NL] Our digital marketing results have never been better. NekZoho's data-driven approach and transparent reporting gave us confidence and a fantastic ROI.",
   "testimonials.t3name": "Sarah L.",
   "testimonials.t3title": "Oprichter, Eco-Wear Brands",
+  "testimonials.t4quote": "[NL] Their Zoho integration streamlined our entire workflow. It was a game-changer for our operations.",
+  "testimonials.t4name": "John D.",
+  "testimonials.t4title": "COO, Quantum Logistics",
+  "testimonials.t5quote": "[NL] The React-based web app NekZoho built is incredibly fast and scalable. Our user engagement is up 40%.",
+  "testimonials.t5name": "Maria K.",
+  "testimonials.t5title": "Product Manager, InnovateCo",
+  "testimonials.t6quote": "[NL] Our lead generation has tripled since NekZoho took over our digital marketing. The ROI is undeniable.",
+  "testimonials.t6name": "Kenji T.",
+  "testimonials.t6title": "CEO, Apex Solutions",
 
   // Why Choose Us Section
   "whyUs.preTitle": "Ons Voordeel",
@@ -181,6 +190,12 @@ const translations_nl = {
         '<p class="lead mb-4">[NL] User experience (UX) and user interface (UI) design are critical for application success. Focusing on the user leads to higher adoption, satisfaction, and retention.</p><h3 class="fw-bold fs-4 mb-3">1. Understand Your Users</h3><p class="mb-4">[NL] Conduct user research through interviews, surveys, and persona development to understand user needs, goals, and pain points...</p>',
     },
   },
+
+  // Privacy Section
+  "title.privacy": "Privacybeleid & Voorwaarden | NekZoho",
+  "pagePrivacy.title": "Privacybeleid & Servicevoorwaarden",
+  "pagePrivacy.breadcrumb": "Home / Privacy",
+  "nav.privacy": "Privacy & Voorwaarden",
 
   // CTA Section
   "cta.title": "Klaar om uw Bedrijf te Laten Groeien?",

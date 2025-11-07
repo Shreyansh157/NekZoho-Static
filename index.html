@@ -80,27 +80,31 @@
 
   <main>
 
-    <section id="home-hero" class="d-flex align-items-center min-vh-100">
-      <div class="container text-center text-white">
-        <h1 class="display-3 fw-bold mb-4 text-white" data-lang-key="hero.title">
-          Streamline, Automate, <br /> and Scale Your Enterprise.
-        </h1>
-        <p class="lead text-white mb-5 mx-auto" style="max-width: 700px" data-lang-key="hero.subTitle">
-          NekZoho is your trusted partner for cutting-edge Zoho Consulting, bespoke Web Development, and data-driven Digital Marketing strategies.
-        </p>
-        <div class="d-flex flex-column flex-lg-row justify-content-center">
-          <a href="services.html" class="btn btn-hero-primary btn-lg rounded-pill px-5 py-3 me-lg-3 mb-3 mb-lg-0 w-100 w-lg-auto" data-lang-key="hero.ctaPrimary">
-            Start Your Transformation
-          </a>
-          <a href="#process" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 w-100 w-lg-auto" data-lang-key="hero.ctaSecondary">
-            Discover Our Solutions
-          </a>
+  <section id="new-hero">
+    <div class="hero-background-image"></div>
+    <div class="container">
+      <div class="row min-vh-100 align-items-center py-5">
+        
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold text-white mb-4">
+            We Make Zoho &amp; Web Tech Work for Your Business
+          </h1>
+          <p class="lead text-white-50 mb-5" style="max-width: 500px;">
+            Specialist consultancy for Zoho implementation, web development, and digital growth.
+          </p>
+          <div>
+            <a href="contact.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 me-lg-3 mb-3 w-100 w-lg-auto">
+              Get a Free Consultation
+            </a>
+            <a href="services.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 w-100 w-lg-auto">
+              See Our Services
+            </a>
+          </div>
         </div>
+        <div class="col-lg-6"></div>
       </div>
-      <a href="#about" class="hero-scroll-down text-decoration-none" aria-label="Scroll down">
-        <span data-icon="ArrowDown" data-icon-size="24"></span>
-      </a>
-    </section>
+    </div>
+  </section>
 
     <section id="trusted-by" class="py-5 bg-light">
       <div class="container">
@@ -342,12 +346,20 @@
         </div>
         
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="card h-100 shadow-sm testimonial-card">
-                    <div class="card-body p-5 text-center">
+
+            <div class="carousel-item active" data-bs-interval="7000">
+              <div class="row g-4">
+                
+                <div class="col-lg-4 d-flex">
+                  <div class="card h-100 w-100 shadow-sm testimonial-card">
+                    <div class="card-body p-4 text-center d-flex flex-column">
                       <div class="text-warning mb-2">
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
@@ -355,7 +367,7 @@
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                       </div>
-                      <p class="fs-5 fst-italic my-3" data-lang-key="testimonials.t1quote">
+                      <p class="fs-6 fst-italic my-3 flex-grow-1" data-lang-key="testimonials.t1quote">
                         "NekZoho transformed our sales process with Zoho CRM. Their customization was spot-on, and support was exceptional. Highly recommend!"
                       </p>
                       <div class="mt-auto">
@@ -365,14 +377,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item" data-bs-interval="5000">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="card h-100 shadow-sm testimonial-card">
-                    <div class="card-body p-5 text-center">
+                
+                <div class="col-lg-4 d-flex">
+                  <div class="card h-100 w-100 shadow-sm testimonial-card">
+                    <div class="card-body p-4 text-center d-flex flex-column">
                       <div class="text-warning mb-2">
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
@@ -380,7 +388,7 @@
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                       </div>
-                      <p class="fs-5 fst-italic my-3" data-lang-key="testimonials.t2quote">
+                      <p class="fs-6 fst-italic my-3 flex-grow-1" data-lang-key="testimonials.t2quote">
                         "The new website built by NekZoho is stunning, fast, and incredibly user-friendly. It has significantly boosted our online engagement."
                       </p>
                       <div class="mt-auto">
@@ -390,14 +398,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item" data-bs-interval="5000">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="card h-100 shadow-sm testimonial-card">
-                    <div class="card-body p-5 text-center">
+
+                <div class="col-lg-4 d-flex">
+                  <div class="card h-100 w-100 shadow-sm testimonial-card">
+                    <div class="card-body p-4 text-center d-flex flex-column">
                       <div class="text-warning mb-2">
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
@@ -405,7 +409,7 @@
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                         <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
                       </div>
-                      <p class="fs-5 fst-italic my-3" data-lang-key="testimonials.t3quote">
+                      <p class="fs-6 fst-italic my-3 flex-grow-1" data-lang-key="testimonials.t3quote">
                         "Our digital marketing results have never been better. NekZoho's data-driven approach and transparent reporting gave us confidence and a fantastic ROI."
                       </p>
                       <div class="mt-auto">
@@ -415,8 +419,79 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
+            
+            <div class="carousel-item" data-bs-interval="7000">
+              <div class="row g-4">
+                
+                <div class="col-lg-4 d-flex">
+                  <div class="card h-100 w-100 shadow-sm testimonial-card">
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                      <div class="text-warning mb-2">
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                      </div>
+                      <p class="fs-6 fst-italic my-3 flex-grow-1" data-lang-key="testimonials.t4quote">
+                        "Their Zoho integration streamlined our entire workflow. It was a game-changer for our operations."
+                      </p>
+                      <div class="mt-auto">
+                        <h5 class="fw-bold mb-0" data-lang-key="testimonials.t4name">John D.</h5>
+                        <small class="text-muted" data-lang-key="testimonials.t4title">COO, Quantum Logistics</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 d-flex">
+                  <div class="card h-100 w-100 shadow-sm testimonial-card">
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                      <div class="text-warning mb-2">
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                      </div>
+                      <p class="fs-6 fst-italic my-3 flex-grow-1" data-lang-key="testimonials.t5quote">
+                        "The React-based web app NekZoho built is incredibly fast and scalable. Our user engagement is up 40%."
+                      </p>
+                      <div class="mt-auto">
+                        <h5 class="fw-bold mb-0" data-lang-key="testimonials.t5name">Maria K.</h5>
+                        <small class="text-muted" data-lang-key="testimonials.t5title">Product Manager, InnovateCo</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 d-flex">
+                  <div class="card h-100 w-100 shadow-sm testimonial-card">
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                      <div class="text-warning mb-2">
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                        <span data-icon="Star" data-icon-size="18" class="d-inline text-warning" data-icon-fill="currentColor"></span>
+                      </div>
+                      <p class="fs-6 fst-italic my-3 flex-grow-1" data-lang-key="testimonials.t6quote">
+                        "Our lead generation has tripled since NekZoho took over our digital marketing. The ROI is undeniable."
+                      </p>
+                      <div class="mt-auto">
+                        <h5 class="fw-bold mb-0" data-lang-key="testimonials.t6name">Kenji T.</h5>
+                        <small class="text-muted" data-lang-key="testimonials.t6title">CEO, Apex Solutions</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
           </div>
           
           <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
@@ -642,17 +717,19 @@
             <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.services">Services</a></li>
             <li class="mb-2"><a href="blogs.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.blogs">Blog</a></li>
             <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.contact">Contact</a></li>
+            <li class="mb-2"><a href="privacy.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.privacy">Privacy & Terms</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6">
           <h5 class="fw-bold text-white mb-3" data-lang-key="footer.services">Our Services</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service1">Zoho Consulting</a></li>
-            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service2">Web Development</a></li>
-            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service3">Digital Marketing</a></li>
-            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service4">CRM/ERP</a></li>
-            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="footer.service5">Automation</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary">Zoho Consulting</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary">E-Commerce</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary">Digital Marketing</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary">CRM/ERP</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary">Automation</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none hover-primary">IT & Security</a></li>
           </ul>
         </div>
 
@@ -661,7 +738,7 @@
           <ul class="list-unstyled">
             <li class="d-flex mb-2">
               <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Mail" data-icon-size="18"></span>
-              <a href="mailto:info@nekzoho.com" class="text-white-50 text-decoration-none hover-primary">info@nekzoho.com</a>
+              <a href="mailto:info@nekzoho.com" class="text-white-50 text-decoration-none hover-primary">info@neksoftconsultancy.com</a>
             </li>
             <li class="d-flex mb-2">
               <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Phone" data-icon-size="18"></span>
