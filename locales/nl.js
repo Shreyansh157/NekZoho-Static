@@ -20,11 +20,10 @@ const translations_nl = {
 
   // Hero Section
   "hero.preTitle": "De Groei van uw Bedrijf Versterken",
-  "hero.title": "Stroomlijn, Automatiseer en Schaal uw Onderneming.",
-  "hero.subTitle":
-    "NekZoho is uw vertrouwde partner voor geavanceerde Zoho Consulting, op maat gemaakte webontwikkeling en datagestuurde digitale marketingstrategieën.",
-  "hero.ctaPrimary": "Start uw Transformatie",
-  "hero.ctaSecondary": "Ontdek Onze Oplossingen",
+  "hero.title": "Wij zorgen ervoor dat Zoho & webtechnologie voor uw bedrijf werkt",
+  "hero.subTitle": "Specialistisch advies voor Zoho-implementatie, webontwikkeling en digitale groei.",
+  "hero.ctaPrimary": "Ontvang een gratis consult",
+  "hero.ctaSecondary": "Zie onze diensten",
 
   // About Section
   "about.preTitle": "Onze Visie",
@@ -79,7 +78,7 @@ const translations_nl = {
   "industries.preTitle": "Verticale Expertise",
   "industries.title": "Industrieën die We Versterken",
   "industries.subTitle": "Onze oplossingen zijn ontworpen om de unieke uitdagingen en kansen binnen diverse marktsectoren aan te pakken.",
-  "industries.i1": "E-commerce & Detailhandel",
+  "industries.i1": "E-commerce",
   "industries.i2": "Logistiek",
   "industries.i3": "Vastgoed",
   "industries.i4": "Non-Profit",
@@ -191,6 +190,76 @@ const translations_nl = {
     },
   },
 
+  // NEW: Detailed content for Service Modals (Dutch)
+  serviceModals: {
+    s1: `
+      <p>[NL] As a <strong>Zoho Authorized Partner</strong>, we provide comprehensive consulting that transforms your business. We don't just install software; we re-engineer your processes to leverage the full power of the Zoho One suite.</p>
+      <p>[NL] Our certified experts will analyze your current workflows, identify bottlenecks, and implement customized solutions that automate tasks and provide clear business insights.</p>
+      <strong class='d-block mb-2'>[NL] Key services include:</strong>
+      <ul>
+        <li><strong>[NL] Zoho CRM Setup & Customization:</strong> Tailoring modules, fields, and layouts to match your exact sales funnel.</li>
+        <li><strong>[NL] Advanced Deluge Scripting:</strong> Creating powerful custom functions, workflows, and automations that save hundreds of hours.</li>
+        <li><strong>[NL] Zoho Books & Finance:</strong> Integrating your accounting, inventory, and subscription billing for a seamless financial overview.</li>
+        <li><strong>[NL] Zoho Analytics:</strong> Building custom dashboards and reports that give you real-time KPIs from across all your apps.</li>
+      </ul>
+    `,
+    s2: `
+      <p>[NL] Your website is your digital flagship. We build high-performance, visually stunning, and scalable web applications that serve as the central hub for your business.</p>
+      <p>[NL] We go beyond simple templates, specializing in modern JavaScript frameworks and Headless CMS architectures that deliver speed, security, and exceptional user experiences.</p>
+      <strong class='d-block mb-2'>[NL] Key services include:</strong>
+      <ul>
+        <li><strong>[NL] Frontend Development:</strong> Expert-level development in React, Vue.js, and Svelte for interactive and fast-loading applications.</li>
+        <li><strong>[NL] Backend & API Development:</strong> Building robust, secure backends using Node.js, Python (Django), and PHP (Laravel).</li>
+        <li><strong>[NL] E-commerce Solutions:</strong> Custom Shopify, WooCommerce, and Magento 2 development, including theme building and private app integration.</li>
+        <li><strong>[NL] Headless CMS:</strong> Integrating platforms like Strapi, Sanity, or Contentful for a flexible and future-proof content strategy.</li>
+      </ul>
+    `,
+    s3: `
+      <p>[NL] Having a great product is only half the battle. Our data-driven digital marketing strategies ensure your target audience finds you, engages with your brand, and converts.</p>
+      <p>[NL] We skip the "vanity metrics" and focus on what matters: lead quality, cost-per-acquisition (CPA), and return on ad spend (ROAS). We build sustainable growth engines, not just temporary traffic spikes.</p>
+      <strong class='d-block mb-2'>[NL] Key services include:</strong>
+      <ul>
+        <li><strong>[NL] Search Engine Optimization (SEO):</strong> Technical audits, on-page optimization, quality link building, and local SEO to dominate search rankings.</li>
+        <li><strong>[NL] Paid Advertising (PPC):</strong> Expert management of Google Ads, Meta (Facebook & Instagram) Ads, and LinkedIn Ads campaigns.</li>
+        <li><strong>[NL] Marketing Automation:</strong> Building email funnels and lead nurturing sequences using platforms like Zoho Campaigns, Mailchimp, or ActiveCampaign.</li>
+        <li><strong>[NL] Content Marketing:</strong> Developing a content strategy that establishes you as an authority and attracts organic traffic.</li>
+      </ul>
+    `,
+    s4: `
+      <p>[NL] Break down the data silos between your departments. We implement and customize Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) systems to create a single source of truth for your business.</p>
+      <p>[NL] From sales and marketing to inventory and accounting, a unified system reduces errors, improves efficiency, and gives you a 360-degree view of your operations and customers.</p>
+      <strong class='d-block mb-2'>[NL] Key services include:</strong>
+      <ul>
+        <li><strong>[NL] Zoho CRM / Bigin Implementation:</strong> Full setup, customization, and user training.</li>
+        <li><strong>[NL] Odoo ERP:</strong> Customizing and deploying the all-in-one Odoo suite for manufacturing, inventory, and accounting.</li>
+        <li><strong>[NL] Salesforce Consulting:</strong> Customizing Sales Cloud and Service Cloud to fit your enterprise needs.</li>
+        <li><strong>[NL] Data Migration & Integration:</strong> Safely and accurately moving your data from old systems into your new, unified platform.</li>
+      </ul>
+    `,
+    s5: `
+      <p>[NL] Stop wasting valuable time on repetitive, manual tasks. We identify, map, and automate your key business processes, allowing your team to focus on high-value work that drives growth.</p>
+      <p>[NL] Using no-code/low-code platforms and custom scripting, we connect the apps you already use (like Google Sheets, Slack, Zoho, and your email) to create seamless, automated workflows.</p>
+      <strong class='d-block mb-2'>[NL] Key services include:</strong>
+      <ul>
+        <li><strong>[NL] Workflow Analysis:</strong> A detailed audit of your current processes to find the biggest automation opportunities.</li>
+        <li><strong>[NL] Integration Platforms:</strong> Building complex workflows using Zoho Flow, Zapier, and Make (formerly Integromat).</li>
+        <li><strong>[NL] Robotic Process Automation (RPA):</strong> Deploying software 'bots' to handle manual data entry, report generation, and system interactions.</li>
+        <li><strong>[NL] Custom API Integration:</strong> Writing code to connect proprietary or legacy systems that don't have public integrations.</li>
+      </ul>
+    `,
+    s6: `
+      <p>[NL] Move your infrastructure to the cloud for unparalleled security, scalability, and reliability. We manage your entire cloud journey, from initial strategy and migration to ongoing management and optimization.</p>
+      <p>[NL] Whether you're looking to lift-and-shift existing servers or build a cutting-edge serverless application, our certified cloud architects will design a solution that fits your budget and performance needs.</p>
+      <strong class='d-block mb-2'>[NL] Key services include:</strong>
+      <ul>
+        <li><strong>[NL] Cloud Provider Setup:</strong> Architecting secure and scalable infrastructure on AWS, Google Cloud (GCP), and Microsoft Azure.</li>
+        <li><strong>[NL] Serverless & Microservices:</strong> Building modern applications using functions-as-a-service (e.g., AWS Lambda) for ultimate scalability and cost-efficiency.</li>
+        <li><strong>[NL] DevOps & CI/CD:</strong> Implementing automated build, test, and deployment pipelines to release new features faster and more reliably.</li>
+        <li><strong>[NL] Cloud Migration:</strong> Planning and executing a seamless migration of your on-premise servers and databases to the cloud with minimal downtime.</li>
+      </ul>
+    `,
+  },
+
   // Privacy Section
   "title.privacy": "Privacybeleid & Voorwaarden | NekZoho",
   "pagePrivacy.title": "Privacybeleid & Servicevoorwaarden",
@@ -198,7 +267,7 @@ const translations_nl = {
   "nav.privacy": "Privacy & Voorwaarden",
 
   // CTA Section
-  "cta.title": "Klaar om uw Bedrijf te Laten Groeien?",
+  "cta.title": "Klaar om uw <span class='text-primary'>Bedrijf te Laten Groeien?</span>",
   "cta.subTitle":
     "Neem vandaag nog contact op met de experts van NekZoho en ontdek hoe oplossingen op maat in Zoho, webontwikkeling en digitale marketing uw succes kunnen stimuleren.",
   "cta.button": "Neem Contact Op",

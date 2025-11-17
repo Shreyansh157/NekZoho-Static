@@ -20,15 +20,12 @@ This site was converted from a React app to a high-performance, vanilla HTML/CSS
 
 ## 💻 Tech Stack
 
-- **HTML5:** For clean, semantic site structure.
-- **CSS3:** For all custom styling, animations, and responsive design (Flexbox, Grid).
-- **Vanilla JavaScript (ES6+):** For all interactivity, including:
-_ Theme switching
-_ Language toggling
-_ Dynamic content loading
-_ Intersection Observer for scroll animations
-<!-- * **Bootstrap 5:** As the core CSS framework for layout and components. -->
-- **Lucide Icons:** For clean, modern SVG icons.
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+- **Bootstrap 5**
+- **GSAP (GreenSock)**
+- **Lucide Icons:**
 
 ## 🚀 How to Use
 

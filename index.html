@@ -80,49 +80,91 @@
 
   <main>
 
-  <section id="new-hero">
-    <div class="hero-background-image"></div>
-    <div class="container">
-      <div class="row min-vh-100 align-items-center py-5">
-        
-        <div class="col-lg-6">
-          <h1 class="display-4 fw-bold text-white mb-4">
-            We Make Zoho &amp; Web Tech Work for Your Business
-          </h1>
-          <p class="lead text-white-50 mb-5" style="max-width: 500px;">
-            Specialist consultancy for Zoho implementation, web development, and digital growth.
-          </p>
-          <div>
-            <a href="contact.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 me-lg-3 mb-3 w-100 w-lg-auto">
-              Get a Free Consultation
-            </a>
-            <a href="services.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 w-100 w-lg-auto">
-              See Our Services
-            </a>
+    <section id="new-hero">
+      <div class="hero-background-image"></div>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center py-5">
+          
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold text-white mb-4" data-lang-key="hero.title">
+              We Make Zoho &amp; Web Tech Work for Your Business
+            </h1>
+            <p class="lead text-white-50 mb-5" style="max-width: 500px;" data-lang-key="hero.subTitle">
+              Specialist consultancy for Zoho implementation, web development, and digital growth.
+            </p>
+            <div>
+              <a href="contact.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 me-lg-3 mb-3 w-100 w-lg-auto" data-lang-key="hero.ctaPrimary">
+                Get a Free Consultation
+              </a>
+              <a href="services.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 w-100 w-lg-auto" data-lang-key="hero.ctaSecondary">
+                See Our Services
+              </a>
+            </div>
           </div>
+          <div class="col-lg-6"></div>
         </div>
-        <div class="col-lg-6"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <section id="trusted-by" class="py-5 bg-light">
       <div class="container">
-        <h6 class="text-center text-muted text-uppercase small fw-bold mb-4">Trusted by innovative companies worldwide</h6>
-        <div class="scroller" data-speed="slow">
+        <h6 class="text-center text-muted text-uppercase small fw-bold mb-5">Trusted by innovative companies worldwide</h6>
+        <div class="scroller " data-speed="slow">
           <ul class="scroller__inner list-unstyled d-flex">
-            <li class="fs-4 fw-bold text-muted mx-4">ClientLogo</li>
-            <li class="fs-4 fw-bold text-muted mx-4">TechCorp</li>
-            <li class="fs-4 fw-bold text-muted mx-4">InnovateCo</li>
-            <li class="fs-4 fw-bold text-muted mx-4">Quantum</li>
-            <li class="fs-4 fw-bold text-muted mx-4">Nexus</li>
-            <li class="fs-4 fw-bold text-muted mx-4">Apex</li>
-            <li class="fs-4 fw-bold text-muted mx-4">Synergy</li>
-            <li class="fs-4 fw-bold text-muted mx-4">Momentum</li>
-            <li class="fs-4 fw-bold text-muted mx-4">ClientLogo</li>
-            <li class="fs-4 fw-bold text-muted mx-4">TechCorp</li>
-            <li class="fs-4 fw-bold text-muted mx-4">InnovateCo</li>
-            <li class="fs-4 fw-bold text-muted mx-4">Quantum</li>
+            
+            <li class="microsoft-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-microsoft" viewBox="0 0 16 16">
+                <path d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z"/>
+              </svg>  
+            </li>
+            <li class="google-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+              </svg>  
+            </li>
+            <li class="github-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>  
+            </li>
+            <li class="slack-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111.756 8.43 1.68 8.43h1.682zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682zm6.749 1.682c0-.926.755-1.682 1.68-1.682S16 4.964 16 5.889s-.756 1.681-1.68 1.681h-1.681zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68s.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681z"/>
+              </svg>  
+            </li>
+            <li class="amazon-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-amazon" viewBox="0 0 16 16">
+                <path d="M10.813 11.968c.157.083.36.074.5-.05l.005.005a90 90 0 0 1 1.623-1.405c.173-.143.143-.372.006-.563l-.125-.17c-.345-.465-.673-.906-.673-1.791v-3.3l.001-.335c.008-1.265.014-2.421-.933-3.305C10.404.274 9.06 0 8.03 0 6.017 0 3.77.75 3.296 3.24c-.047.264.143.404.316.443l2.054.22c.19-.009.33-.196.366-.387.176-.857.896-1.271 1.703-1.271.435 0 .929.16 1.188.55.264.39.26.91.257 1.376v.432q-.3.033-.621.065c-1.113.114-2.397.246-3.36.67C3.873 5.91 2.94 7.08 2.94 8.798c0 2.2 1.387 3.298 3.168 3.298 1.506 0 2.328-.354 3.489-1.54l.167.246c.274.405.456.675 1.047 1.166ZM6.03 8.431C6.03 6.627 7.647 6.3 9.177 6.3v.57c.001.776.002 1.434-.396 2.133-.336.595-.87.961-1.465.961-.812 0-1.286-.619-1.286-1.533M.435 12.174c2.629 1.603 6.698 4.084 13.183.997.28-.116.475.078.199.431C13.538 13.96 11.312 16 7.57 16 3.832 16 .968 13.446.094 12.386c-.24-.275.036-.4.199-.299z"/>
+                <path d="M13.828 11.943c.567-.07 1.468-.027 1.645.204.135.176-.004.966-.233 1.533-.23.563-.572.961-.762 1.115s-.333.094-.23-.137c.105-.23.684-1.663.455-1.963-.213-.278-1.177-.177-1.625-.13l-.09.009q-.142.013-.233.024c-.193.021-.245.027-.274-.032-.074-.209.779-.556 1.347-.623"/>
+              </svg>   
+            </li>
+            <li class="open-ai-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-openai" viewBox="0 0 16 16">
+                <path d="M14.949 6.547a3.94 3.94 0 0 0-.348-3.273 4.11 4.11 0 0 0-4.4-1.934A4.1 4.1 0 0 0 8.423.2 4.15 4.15 0 0 0 6.305.086a4.1 4.1 0 0 0-1.891.948 4.04 4.04 0 0 0-1.158 1.753 4.1 4.1 0 0 0-1.563.679A4 4 0 0 0 .554 4.72a3.99 3.99 0 0 0 .502 4.731 3.94 3.94 0 0 0 .346 3.274 4.11 4.11 0 0 0 4.402 1.933c.382.425.852.764 1.377.995.526.231 1.095.35 1.67.346 1.78.002 3.358-1.132 3.901-2.804a4.1 4.1 0 0 0 1.563-.68 4 4 0 0 0 1.14-1.253 3.99 3.99 0 0 0-.506-4.716m-6.097 8.406a3.05 3.05 0 0 1-1.945-.694l.096-.054 3.23-1.838a.53.53 0 0 0 .265-.455v-4.49l1.366.778q.02.011.025.035v3.722c-.003 1.653-1.361 2.992-3.037 2.996m-6.53-2.75a2.95 2.95 0 0 1-.36-2.01l.095.057L5.29 12.09a.53.53 0 0 0 .527 0l3.949-2.246v1.555a.05.05 0 0 1-.022.041L6.473 13.3c-1.454.826-3.311.335-4.15-1.098m-.85-6.94A3.02 3.02 0 0 1 3.07 3.949v3.785a.51.51 0 0 0 .262.451l3.93 2.237-1.366.779a.05.05 0 0 1-.048 0L2.585 9.342a2.98 2.98 0 0 1-1.113-4.094zm11.216 2.571L8.747 5.576l1.362-.776a.05.05 0 0 1 .048 0l3.265 1.86a3 3 0 0 1 1.173 1.207 2.96 2.96 0 0 1-.27 3.2 3.05 3.05 0 0 1-1.36.997V8.279a.52.52 0 0 0-.276-.445m1.36-2.015-.097-.057-3.226-1.855a.53.53 0 0 0-.53 0L6.249 6.153V4.598a.04.04 0 0 1 .019-.04L9.533 2.7a3.07 3.07 0 0 1 3.257.139c.474.325.843.778 1.066 1.303.223.526.289 1.103.191 1.664zM5.503 8.575 4.139 7.8a.05.05 0 0 1-.026-.037V4.049c0-.57.166-1.127.476-1.607s.752-.864 1.275-1.105a3.08 3.08 0 0 1 3.234.41l-.096.054-3.23 1.838a.53.53 0 0 0-.265.455zm.742-1.577 1.758-1 1.762 1v2l-1.755 1-1.762-1z"/>
+              </svg>  
+            </li>
+
+            <li class="linkedin-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>  
+            </li>
+            <li class="nvidia-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-nvidia" viewBox="0 0 16 16">
+                <path d="M1.635 7.146S3.08 5.012 5.97 4.791v-.774C2.77 4.273 0 6.983 0 6.983s1.57 4.536 5.97 4.952v-.824c-3.23-.406-4.335-3.965-4.335-3.965M5.97 9.475v.753c-2.44-.435-3.118-2.972-3.118-2.972S4.023 5.958 5.97 5.747v.828h-.004c-1.021-.123-1.82.83-1.82.83s.448 1.607 1.824 2.07M6 2l-.03 2.017A7 7 0 0 1 6.252 4c3.637-.123 6.007 2.983 6.007 2.983s-2.722 3.31-5.557 3.31q-.39-.002-.732-.065v.883q.292.039.61.04c2.638 0 4.546-1.348 6.394-2.943.307.246 1.561.842 1.819 1.104-1.757 1.47-5.852 2.657-8.173 2.657a7 7 0 0 1-.65-.034V14H16l.03-12zm-.03 3.747v-.956a6 6 0 0 1 .282-.015c2.616-.082 4.332 2.248 4.332 2.248S8.73 9.598 6.743 9.598c-.286 0-.542-.046-.773-.123v-2.9c1.018.123 1.223.572 1.835 1.593L9.167 7.02s-.994-1.304-2.67-1.304a5 5 0 0 0-.527.031"/>
+              </svg>  
+            </li>
+            <li class="twitter-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>   
+            </li>
+            <li class="apple-icon client-logo mx-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+              </svg>  
+            </li>
           </ul>
         </div>
       </div>
@@ -132,7 +174,7 @@
       <div class="container">
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 fade-in-section">
-            <p class="text-primary fw-semibold text-uppercase mb-2" data-lang-key="about.preTitle">Our Vision</p>
+            <!-- <p class="text-primary fw-semibold text-uppercase mb-2" data-lang-key="about.preTitle">Our Vision</p> -->
             <h2 class="display-5 fw-bold text-dark mb-4" data-lang-key="about.title">About NekZoho</h2>
             <p class="lead text-muted mb-4" data-lang-key="about.lead">
               As a Zoho Authorized Partner, we specialize in transforming businesses through intelligent automation and robust digital strategies.
@@ -155,13 +197,13 @@
               </li>
             </ul>
             <a href="about.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 mt-3" data-lang-key="about.cta">
-              Meet Our Team
+              Learn More About Us
             </a>
           </div>
           <div class="col-lg-6 about-image-col fade-in-section">
             <img src="assets/images/about-team.png" alt="NekZoho Team" class="img-fluid rounded-3 shadow-lg about-image" />
             <div class="about-experience-box bg-primary text-white p-4 rounded-3 shadow-lg">
-              <h3 class="fw-bold mb-0 text-white">10+</h3>
+              <h3 class="fw-bold mb-0 text-white">4+</h3>
               <p class="mb-0 fs-5" data-lang-key="about.experience">Years Experience</p>
             </div>
           </div>
@@ -214,31 +256,67 @@
               <div class="tab-pane fade show active p-4" id="v-pills-s1" role="tabpanel" aria-labelledby="v-pills-s1-tab">
                 <h3 class="fw-bold mb-3" data-lang-key="services.s1Title">Zoho Consulting & Customization</h3>
                 <p class="text-muted" data-lang-key="services.s1Desc">Optimize your business with tailored Zoho solutions, from initial setup to advanced workflow automation.</p>
+                <p class="text-muted">We go beyond basic setup. Our certified consultants analyze your unique business processes to custom-fit the entire Zoho One suite to your needs, ensuring you leverage the full power of the platform.</p>
+                <ul class="text-muted">
+                  <li>Zoho CRM Plus, Books, and Inventory Setup</li>
+                  <li>Custom Deluge Scripting for Automation</li>
+                  <li>Third-party App Integration & Data Migration</li>
+                </ul>
                 <img src="assets/images/zoho-services.png" alt="Zoho Dashboard" class="img-fluid rounded-3 mt-4" />
               </div>
               <div class="tab-pane fade p-4" id="v-pills-s2" role="tabpanel" aria-labelledby="v-pills-s2-tab">
                 <h3 class="fw-bold mb-3" data-lang-key="services.s2Title">Bespoke Web & App Development</h3>
                 <p class="text-muted" data-lang-key="services.s2Desc">Responsive, high-performance websites and applications using modern frameworks like React.</p>
+                <p class="text-muted">From sleek marketing sites to complex, data-driven web applications, our team builds fast, secure, and scalable solutions. We specialize in modern stacks that deliver exceptional user experiences.</p>
+                <ul class="text-muted">
+                  <li>React, Vue.js, and Svelte Development</li>
+                  <li>Headless CMS (Strapi, Sanity) Integration</li>
+                  <li>Progressive Web App (PWA) Development</li>
+                </ul>
                 <img src="assets/images/app-dev.avif" alt="Web Development" class="img-fluid rounded-3 mt-4" />
               </div>
               <div class="tab-pane fade p-4" id="v-pills-s3" role="tabpanel" aria-labelledby="v-pills-s3-tab">
                 <h3 class="fw-bold mb-3" data-lang-key="services.s3Title">Results-Driven Digital Marketing</h3>
                 <p class="text-muted" data-lang-key="services.s3Desc">Elevate your brand with comprehensive SEO, PPC, and social media management strategies.</p>
+                 <p class="text-muted">Our data-first approach to digital marketing means every decision is backed by analytics. We focus on sustainable growth, quality lead generation, and maximizing your return on ad spend (ROAS).</p>
+                <ul class="text-muted">
+                  <li>Technical SEO & Content Strategy</li>
+                  <li>Google Ads (PPC) & Meta Ads Management</li>
+                  <li>Marketing Automation & Funnel Building</li>
+                </ul>
                 <img src="assets/images/digi-marketing.jpg" alt="Digital Marketing" class="img-fluid rounded-3 mt-4" />
               </div>
               <div class="tab-pane fade p-4" id="v-pills-s4" role="tabpanel" aria-labelledby="v-pills-s4-tab">
                 <h3 class="fw-bold mb-3" data-lang-key="services.s4Title">ERP & CRM Implementation</h3>
                 <p class="text-muted" data-lang-key="services.s4Desc">Integrate and optimize enterprise systems that centralize data and improve efficiency.</p>
+                <p class="text-muted">We bridge the gap between your departments. By implementing a unified ERP and CRM system, we break down data silos, providing a single source of truth for your entire organization.</p>
+                <ul class="text-muted">
+                  <li>Odoo, SAP, and NetSuite Implementation</li>
+                  <li>Zoho CRM / Bigin Customization</li>
+                  <li>Data Migration and System Integration</li>
+                </ul>
                 <img src="assets/images/crm-image.avif" alt="CRM" class="img-fluid rounded-3 mt-4" />
               </div>
               <div class="tab-pane fade p-4" id="v-pills-s5" role="tabpanel" aria-labelledby="v-pills-s5-tab">
                 <h3 class="fw-bold mb-3" data-lang-key="services.s5Title">Business Process Automation</h3>
                 <p class="text-muted" data-lang-key="services.s5Desc">Automate repetitive tasks and complex workflows to boost productivity and reduce operational costs.</p>
+                <p class="text-muted">Stop wasting time on manual data entry. We map your existing workflows and build robust automations that save time, reduce errors, and free your team to focus on high-value work.</p>
+                <ul class="text-muted">
+                  <li>Workflow Analysis & Optimization</li>
+                  <li>Zoho Flow, Zapier & Make Integration</li>
+                  <li>Robotic Process Automation (RPA)</li>
+                </ul>
                 <img src="assets/images/business-auto.avif" alt="Automation" class="img-fluid rounded-3 mt-4" height="500px"/>
               </div>
               <div class="tab-pane fade p-4" id="v-pills-s6" role="tabpanel" aria-labelledby="v-pills-s6-tab">
                 <h3 class="fw-bold mb-3" data-lang-key="services.s6Title">Cloud Solutions & Migration</h3>
                 <p class="text-muted" data-lang-key="services.s6Desc">Seamlessly transition your infrastructure and applications to the cloud for security and scalability.</p>
+                <p class="text-muted">Move your business to the cloud with confidence. We manage the entire migration process, from planning to execution, ensuring minimal downtime and maximum security on platforms like AWS, Azure, and Google Cloud.</p>
+                <ul class="text-muted">
+                  <li>AWS & Azure Infrastructure Setup</li>
+                  <li>Serverless & Microservices Architecture</li>
+                  <li>DevOps & CI/CD Pipeline Implementation</li>
+                </ul>
                 <img src="assets/images/cloud-service.jpg" alt="Cloud" class="img-fluid rounded-3 mt-4" />
               </div>
             </div>
@@ -316,22 +394,104 @@
       </div>
       <div class="scroller" data-speed="fast" data-direction="right">
         <ul class="scroller__inner list-unstyled d-flex">
-          <li class="industry-item" data-lang-key="industries.i1">E-commerce & Retail</li>
-          <li class="industry-item" data-lang-key="industries.i2">Logistics</li>
-          <li class="industry-item" data-lang-key="industries.i3">Real Estate</li>
-          <li class="industry-item" data-lang-key="industries.i4">Non-Profit</li>
-          <li class="industry-item" data-lang-key="industries.i5">Education</li>
-          <li class="industry-item" data-lang-key="industries.i6">Hospitality</li>
-          <li class="industry-item" data-lang-key="industries.i7">Manufacturing</li>
-          <li class="industry-item" data-lang-key="industries.i8">Healthcare</li>
-          <li class="industry-item" data-lang-key="industries.i9">Publishing</li>
-          <li class="industry-item" data-lang-key="industries.i10">Consulting</li>
-          <li class="industry-item" data-lang-key="industries.i11">Financial</li>
-          <li class="industry-item" data-lang-key="industries.i12">Construction</li>
-          <li class="industry-item" data-lang-key="industries.i1">E-commerce & Retail</li>
-          <li class="industry-item" data-lang-key="industries.i2">Logistics</li>
-          <li class="industry-item" data-lang-key="industries.i3">Real Estate</li>
-          <li class="industry-item" data-lang-key="industries.i4">Non-Profit</li>
+          
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="ShoppingBag" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i1">E-commerce</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="Truck" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i2">Logistics</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="Building2" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i3">Real Estate</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="HeartHandshake" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i4">Non-Profit</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="School" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i5">Education</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="Utensils" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i6">Hospitality</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="Factory" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i7">Manufacturing</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="Stethoscope" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i8">Healthcare</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="BookOpen" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i9">Publishing</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="UserCheck" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i10">Consulting</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="DollarSign" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i11">Financial</h5>
+              </div>
+            </div>
+          </li>
+          <li class="industry-card-item">
+            <div class="card h-100 text-center shadow-sm border-0 service-card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <span class="text-primary mb-1" data-icon="HardHat" data-icon-size="32"></span>
+                <h5 class="fs-6 fw-semibold mb-0" data-lang-key="industries.i12">Construction</h5>
+              </div>
+            </div>
+          </li>
+
         </ul>
       </div>
     </section>
@@ -667,7 +827,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section-padding bg-dark text-white text-center pb-1 fade-in-section">
+    <section id="contact" class="section-padding bg-dark text-white text-center pb-1">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -691,25 +851,17 @@
   <footer class="bg-dark text-white pt-3 pb-5">
     <div class="container">
       <div class="row g-4 pt-2 pb-3">
+
         <div class="col-lg-4 col-md-12">
           <a class="navbar-brand fw-bold fs-2 text-white text-decoration-none" href="index.html">
             Nek<span class="text-white-50">Zoho</span>
           </a>
-          <p class="text-white-50 my-3" data-lang-key="footer.tagline">Empowering businesses through Zoho, Web Development, and Digital Marketing solutions.</p>
-          <div class="d-flex">
-            <a href="#" class="btn btn-outline-primary btn-circle me-2">
-              <span data-icon="Globe" data-icon-size="18"></span>
-            </a>
-            <a href="#" class="btn btn-outline-primary btn-circle me-2">
-              <span data-icon="MessageSquare" data-icon-size="18"></span>
-            </a>
-            <a href="#" class="btn btn-outline-primary btn-circle">
-              <span data-icon="Calendar" data-icon-size="18"></span>
-            </a>
-          </div>
+          <p class="text-white-50 me-3" data-lang-key="footer.tagline">Empowering businesses through Zoho, Web Development, and Digital Marketing solutions.</p>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        
+        
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <h5 class="fw-bold text-white mb-3" data-lang-key="footer.links">Quick Links</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none hover-primary" data-lang-key="nav.home">Home</a></li>
@@ -733,23 +885,27 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-4">
-          <h5 class="fw-bold text-white mb-3" data-lang-key="footer.contact">Contact Us</h5>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <h5 class="fw-bold text-white mb-3">Follow Us</h5>
           <ul class="list-unstyled">
-            <li class="d-flex mb-2">
-              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Mail" data-icon-size="18"></span>
-              <a href="mailto:info@nekzoho.com" class="text-white-50 text-decoration-none hover-primary">info@neksoftconsultancy.com</a>
+            <li class="mb-2">
+              <a href="#" class="text-white-50 text-decoration-none hover-primary d-flex align-items-center">
+                <span data-icon="Linkedin" data-icon-size="18" class="me-2"></span> LinkedIn
+              </a>
             </li>
-            <li class="d-flex mb-2">
-              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="Phone" data-icon-size="18"></span>
-              <a href="tel:+1234567890" class="text-white-50 text-decoration-none hover-primary">+1 (234) 567-890</a>
+            <li class="mb-2">
+              <a href="#" class="text-white-50 text-decoration-none hover-primary d-flex align-items-center">
+                <span data-icon="Twitter" data-icon-size="18" class="me-2"></span> Twitter
+              </a>
             </li>
-            <li class="d-flex mb-2">
-              <span class="text-primary mt-1 me-2 flex-shrink-0" data-icon="MapPin" data-icon-size="18"></span>
-              <span class="text-white-50" data-lang-key="footer.address">123 Business Way, City, State</span>
+            <li class="mb-2">
+              <a href="#" class="text-white-50 text-decoration-none hover-primary d-flex align-items-center">
+                <span data-icon="Facebook" data-icon-size="18" class="me-2"></span> Facebook
+              </a>
             </li>
           </ul>
         </div>
+
       </div>
 
       <hr class="border-white-50" />
@@ -770,6 +926,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
 
 </body>
 </html>

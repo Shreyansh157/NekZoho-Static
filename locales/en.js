@@ -20,11 +20,10 @@ const translations_en = {
 
   // Hero Section (index.html)
   "hero.preTitle": "Empowering Your Business Growth",
-  "hero.title": "Streamline, Automate, and Scale Your Enterprise.",
-  "hero.subTitle":
-    "NekZoho is your trusted partner for cutting-edge Zoho Consulting, bespoke Web Development, and data-driven Digital Marketing strategies.",
-  "hero.ctaPrimary": "Start Your Transformation",
-  "hero.ctaSecondary": "Discover Our Solutions",
+  "hero.title": "We Make Zoho &amp; Web Tech Work for Your Business",
+  "hero.subTitle": "Specialist consultancy for Zoho implementation, web development, and digital growth.",
+  "hero.ctaPrimary": "Get a Free Consultation",
+  "hero.ctaSecondary": "See Our Services",
 
   // About Section (index.html & about.html)
   "about.preTitle": "Our Vision",
@@ -36,7 +35,7 @@ const translations_en = {
   "about.point1": "Zoho Authorized Partner with proven expertise.",
   "about.point2": "Custom solutions for unique business challenges.",
   "about.point3": "Dedicated support and long-term partnership.",
-  "about.cta": "Meet Our Team",
+  "about.cta": "Learn More About Us",
   "about.experience": "Years Experience",
 
   // Services Section (index.html & services.html)
@@ -78,7 +77,7 @@ const translations_en = {
   "industries.preTitle": "Vertical Expertise",
   "industries.title": "Industries We Empower",
   "industries.subTitle": "Our solutions are crafted to address the unique challenges and opportunities within diverse market sectors.",
-  "industries.i1": "E-commerce & Retail",
+  "industries.i1": "E-commerce",
   "industries.i2": "Logistics",
   "industries.i3": "Real Estate",
   "industries.i4": "Non-Profit",
@@ -198,6 +197,76 @@ const translations_en = {
     },
   },
 
+  // NEW: Detailed content for Service Modals
+  serviceModals: {
+    s1: `
+      <p>As a <strong>Zoho Authorized Partner</strong>, we provide comprehensive consulting that transforms your business. We don't just install software; we re-engineer your processes to leverage the full power of the Zoho One suite.</p>
+      <p>Our certified experts will analyze your current workflows, identify bottlenecks, and implement customized solutions that automate tasks and provide clear business insights.</p>
+      <strong class='d-block mb-2'>Key services include:</strong>
+      <ul>
+        <li><strong>Zoho CRM Setup & Customization:</strong> Tailoring modules, fields, and layouts to match your exact sales funnel.</li>
+        <li><strong>Advanced Deluge Scripting:</strong> Creating powerful custom functions, workflows, and automations that save hundreds of hours.</li>
+        <li><strong>Zoho Books & Finance:</strong> Integrating your accounting, inventory, and subscription billing for a seamless financial overview.</li>
+        <li><strong>Zoho Analytics:</strong> Building custom dashboards and reports that give you real-time KPIs from across all your apps.</li>
+      </ul>
+    `,
+    s2: `
+      <p>Your website is your digital flagship. We build high-performance, visually stunning, and scalable web applications that serve as the central hub for your business.</p>
+      <p>We go beyond simple templates, specializing in modern JavaScript frameworks and Headless CMS architectures that deliver speed, security, and exceptional user experiences.</p>
+      <strong class='d-block mb-2'>Key services include:</strong>
+      <ul>
+        <li><strong>Frontend Development:</strong> Expert-level development in React, Vue.js, and Svelte for interactive and fast-loading applications.</li>
+        <li><strong>Backend & API Development:</strong> Building robust, secure backends using Node.js, Python (Django), and PHP (Laravel).</li>
+        <li><strong>E-commerce Solutions:</strong> Custom Shopify, WooCommerce, and Magento 2 development, including theme building and private app integration.</li>
+        <li><strong>Headless CMS:</strong> Integrating platforms like Strapi, Sanity, or Contentful for a flexible and future-proof content strategy.</li>
+      </ul>
+    `,
+    s3: `
+      <p>Having a great product is only half the battle. Our data-driven digital marketing strategies ensure your target audience finds you, engages with your brand, and converts.</p>
+      <p>We skip the "vanity metrics" and focus on what matters: lead quality, cost-per-acquisition (CPA), and return on ad spend (ROAS). We build sustainable growth engines, not just temporary traffic spikes.</p>
+      <strong class='d-block mb-2'>Key services include:</strong>
+      <ul>
+        <li><strong>Search Engine Optimization (SEO):</strong> Technical audits, on-page optimization, quality link building, and local SEO to dominate search rankings.</li>
+        <li><strong>Paid Advertising (PPC):</strong> Expert management of Google Ads, Meta (Facebook & Instagram) Ads, and LinkedIn Ads campaigns.</li>
+        <li><strong>Marketing Automation:</strong> Building email funnels and lead nurturing sequences using platforms like Zoho Campaigns, Mailchimp, or ActiveCampaign.</li>
+        <li><strong>Content Marketing:</strong> Developing a content strategy that establishes you as an authority and attracts organic traffic.</li>
+      </ul>
+    `,
+    s4: `
+      <p>Break down the data silos between your departments. We implement and customize Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) systems to create a single source of truth for your business.</p>
+      <p>From sales and marketing to inventory and accounting, a unified system reduces errors, improves efficiency, and gives you a 360-degree view of your operations and customers.</p>
+      <strong class='d-block mb-2'>Key services include:</strong>
+      <ul>
+        <li><strong>Zoho CRM / Bigin Implementation:</strong> Full setup, customization, and user training.</li>
+        <li><strong>Odoo ERP:</strong> Customizing and deploying the all-in-one Odoo suite for manufacturing, inventory, and accounting.</li>
+        <li><strong>Salesforce Consulting:</strong> Customizing Sales Cloud and Service Cloud to fit your enterprise needs.</li>
+        <li><strong>Data Migration & Integration:</strong> Safely and accurately moving your data from old systems into your new, unified platform.</li>
+      </ul>
+    `,
+    s5: `
+      <p>Stop wasting valuable time on repetitive, manual tasks. We identify, map, and automate your key business processes, allowing your team to focus on high-value work that drives growth.</p>
+      <p>Using no-code/low-code platforms and custom scripting, we connect the apps you already use (like Google Sheets, Slack, Zoho, and your email) to create seamless, automated workflows.</p>
+      <strong class='d-block mb-2'>Key services include:</strong>
+      <ul>
+        <li><strong>Workflow Analysis:</strong> A detailed audit of your current processes to find the biggest automation opportunities.</li>
+        <li><strong>Integration Platforms:</strong> Building complex workflows using Zoho Flow, Zapier, and Make (formerly Integromat).</li>
+        <li><strong>Robotic Process Automation (RPA):</strong> Deploying software 'bots' to handle manual data entry, report generation, and system interactions.</li>
+        <li><strong>Custom API Integration:</strong> Writing code to connect proprietary or legacy systems that don't have public integrations.</li>
+      </ul>
+    `,
+    s6: `
+      <p>Move your infrastructure to the cloud for unparalleled security, scalability, and reliability. We manage your entire cloud journey, from initial strategy and migration to ongoing management and optimization.</p>
+      <p>Whether you're looking to lift-and-shift existing servers or build a cutting-edge serverless application, our certified cloud architects will design a solution that fits your budget and performance needs.</p>
+      <strong class='d-block mb-2'>Key services include:</strong>
+      <ul>
+        <li><strong>Cloud Provider Setup:</strong> Architecting secure and scalable infrastructure on AWS, Google Cloud (GCP), and Microsoft Azure.</li>
+        <li><strong>Serverless & Microservices:</strong> Building modern applications using functions-as-a-service (e.g., AWS Lambda) for ultimate scalability and cost-efficiency.</li>
+        <li><strong>DevOps & CI/CD:</strong> Implementing automated build, test, and deployment pipelines to release new features faster and more reliably.</li>
+        <li><strong>Cloud Migration:</strong> Planning and executing a seamless migration of your on-premise servers and databases to the cloud with minimal downtime.</li>
+      </ul>
+    `,
+  },
+
   // Privacy Section
   "title.privacy": "Privacy Policy & Terms | NekZoho",
   "pagePrivacy.title": "Privacy Policy & Terms of Service",
@@ -205,7 +274,7 @@ const translations_en = {
   "nav.privacy": "Privacy & Terms",
 
   // CTA Section
-  "cta.title": "Ready to Elevate Your Business?",
+  "cta.title": "Ready to <span class='text-primary'>Elevate Your Business?</span>",
   "cta.subTitle":
     "Connect with NekZoho experts today and discover how tailored solutions in Zoho, web development, and digital marketing can drive your success.",
   "cta.button": "Connect With Us",

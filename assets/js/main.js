@@ -124,214 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
   })();
 
   /**
-   * 3. FADE-IN ANIMATION ON SCROLL
-   * Uses IntersectionObserver to add 'is-visible' class.
-   */
-  // (function initScrollAnimation() {
-  //   const animatedSections = document.querySelectorAll(".fade-in-section");
-  //   if (!("IntersectionObserver" in window)) {
-  //     // Fallback for old browsers
-  //     animatedSections.forEach((section) => section.classList.add("is-visible"));
-  //     return;
-  //   }
-
-  //   const observer = new IntersectionObserver(
-  //     (entries, observer) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add("is-visible");
-  //           observer.unobserve(entry.target); // Animate only once
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.1, // Trigger when 10% of the section is visible
-  //     }
-  //   );
-
-  //   animatedSections.forEach((section) => {
-  //     observer.observe(section);
-  //   });
-  // })();
-
-  /**
-   * 3. GSAP ANIMATIONS
-   * Replaces the old IntersectionObserver with GSAP & ScrollTrigger.
-   */
-  (function initGsapAnimations() {
-    // Ensure GSAP and ScrollTrigger are loaded
-    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
-      console.error("GSAP or ScrollTrigger not loaded.");
-      return;
-    }
-
-    // Register the plugin
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.fromTo(".hero-background-image", { scale: 1.1 }, { scale: 1, duration: 1.5, ease: "power2.out" });
-
-    // --- 1. Hero Section (On Load) ---
-    gsap.from("#new-hero h1", { duration: 1, y: 50, opacity: 0, delay: 0.2, ease: "power3.out" });
-    gsap.from("#new-hero p", { duration: 1, y: 50, opacity: 0, delay: 0.4, ease: "power3.out" });
-    gsap.from("#new-hero .btn", { duration: 1, y: 50, opacity: 0, delay: 0.6, stagger: 0.2, ease: "power3.out" });
-
-    // --- 2. Generic Header Animation ---
-    // We can animate all section headers as they scroll into view
-    const sectionHeaders = document.querySelectorAll(".section-padding .text-center, #about h2");
-    sectionHeaders.forEach((header) => {
-      gsap.from(header, {
-        scrollTrigger: {
-          trigger: header,
-          start: "top 85%", // Trigger when 85% from the top
-          toggleActions: "play none none none", // Play animation once
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.out",
-      });
-    });
-
-    // --- 3. About Section (#about) ---
-    gsap.from("#about .col-lg-6:first-child", {
-      // Text column
-      scrollTrigger: { trigger: "#about", start: "top 80%" },
-      x: -100,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-    gsap.from("#about .about-image-col", {
-      // Image column
-      scrollTrigger: { trigger: "#about", start: "top 80%" },
-      x: 100,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-    gsap.from(".about-experience-box", {
-      // Pop-up box
-      scrollTrigger: { trigger: ".about-image-col", start: "top 60%" },
-      scale: 0.5,
-      opacity: 0,
-      duration: 0.5,
-      delay: 0.5,
-      ease: "back.out(1.7)",
-    });
-
-    // --- 4. Services Section (#services) ---
-    gsap.from(".service-tabs ", {
-      // Stagger tabs
-      scrollTrigger: { trigger: ".service-tabs", start: "top 80%" },
-      x: -50,
-      opacity: 0,
-      duration: 0.5,
-      stagger: 0.1,
-      ease: "power2.out",
-    });
-    gsap.from(".tab-content", {
-      // Fade in content
-      scrollTrigger: { trigger: ".tab-content", start: "top 80%" },
-      opacity: 0,
-      duration: 1,
-      delay: 0.5,
-      ease: "power2.out",
-    });
-
-    // --- 5. Process Section (#process) ---
-    gsap.from(".timeline-item", {
-      // Stagger timeline items
-      scrollTrigger: { trigger: ".process-timeline", start: "top 80%" },
-      y: 50,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.2,
-      ease: "power3.out",
-    });
-
-    // --- 6. Industries Section (#industries) ---
-    gsap.from("#industries .scroller", {
-      // The scroller itself
-      scrollTrigger: { trigger: "#industries .scroller", start: "top 90%" },
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-
-    // --- 7. Testimonials Section (#testimonials) ---
-    gsap.from("#testimonialCarousel", {
-      // The carousel
-      scrollTrigger: { trigger: "#testimonialCarousel", start: "top 80%" },
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-
-    // --- 8. Why Choose Us Section (#why-choose-us) ---
-    gsap.from("#why-choose-us .row.g-4 > .col-lg-4 .service-card", {
-      // Stagger features
-      scrollTrigger: { trigger: "#why-choose-us .row.g-4", start: "top 80%" },
-      y: 50,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.15,
-      ease: "power3.out",
-    });
-
-    // gsap.from("#services .service-card", {
-    //   // Stagger features
-    //   scrollTrigger: { trigger: "#why-choose-us .row.g-4", start: "top 80%" },
-    //   y: 50,
-    //   opacity: 0,
-    //   duration: 0.6,
-    //   stagger: 0.15,
-    //   ease: "power3.out",
-    // });
-    // --- 9. Blog Section (#blog) ---
-    gsap.from("#blog .row.g-4 > .col-lg-4", {
-      // Stagger blog cards
-      scrollTrigger: { trigger: "#blog .row.g-4", start: "top 80%" },
-      y: 50,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.15,
-      ease: "power3.out",
-    });
-
-    // --- 10. CTA Section (#contact) ---
-    gsap.from("#contact", {
-      // Final CTA
-      scrollTrigger: { trigger: "#contact", start: "top 90%" },
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-
-    // Contact Page - Form & Info
-    gsap.from("#contact-page .col-lg-7", {
-      // Form
-      scrollTrigger: { trigger: "#contact-page", start: "top 70%" },
-      x: -50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-    gsap.from("#contact-page .col-lg-5", {
-      // Info
-      scrollTrigger: { trigger: "#contact-page", start: "top 70%" },
-      x: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.2,
-      ease: "power3.out",
-    });
-  })();
-
-  /**
    * 4. LUCIDE ICON REPLACEMENT
    * Finds elements with data-icon, converts them to data-lucide,
    * and calls the official lucide.createIcons() function.
+   * * *** MUST RUN BEFORE SCROLLER INIT ***
    */
   (function initLucideIcons() {
     if (typeof lucide === "undefined") {
@@ -363,7 +159,33 @@ document.addEventListener("DOMContentLoaded", () => {
   })();
 
   /**
-   * 5. DYNAMIC BLOG POST LOADER (for blog-post.html)
+   * 5. INFINITE SCROLLER
+   * Clones scroller content to create a seamless loop.
+   * * *** MUST RUN BEFORE GSAP INIT ***
+   */
+  (function initInfiniteScroller() {
+    const scrollers = document.querySelectorAll(".scroller");
+    if (!scrollers) return;
+
+    scrollers.forEach((scroller) => {
+      const scrollerInner = scroller.querySelector(".scroller__inner");
+      if (scrollerInner) {
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+
+        // Add the animation class AFTER cloning
+        scrollerInner.classList.add("scrolling");
+      }
+    });
+  })();
+
+  /**
+   * 7. DYNAMIC BLOG POST LOADER (for blog-post.html)
    * This function is called by the language toggle.
    */
   function loadBlogPost(lang) {
@@ -383,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const postData = translations[lang].blogPosts[postId];
-    const postImageData = translations_en.blogPosts[postId];
+    const postImageData = translations_en.blogPosts[postId]; // Always get image from EN
 
     if (postData && postImageData) {
       if (blogContentEl) blogContentEl.style.display = "block";
@@ -404,4 +226,59 @@ document.addEventListener("DOMContentLoaded", () => {
       if (blogNotFoundEl) blogNotFoundEl.style.display = "block";
     }
   }
+
+  /**
+   * 8. DYNAMIC SERVICE MODAL (for services.html)
+   * Populates the modal with content from the card that was clicked.
+   */
+  /**
+   * 8. DYNAMIC SERVICE MODAL (for services.html)
+   * Populates the modal with content from the card that was clicked.
+   */
+  (function initServiceModal() {
+    const serviceModal = document.getElementById("serviceModal");
+    if (!serviceModal) return;
+
+    serviceModal.addEventListener("show.bs.modal", function (event) {
+      // Button that triggered the modal
+      const button = event.relatedTarget;
+
+      // Get the card body
+      const cardBody = button.closest(".card-body");
+
+      // Get the keys from the button and card
+      const titleKey = cardBody.querySelector("h3").dataset.langKey;
+      const modalKey = button.dataset.modalKey; // Get the new modal content key
+
+      // Get current language from localStorage
+      const lang = localStorage.getItem("language") || "en";
+      const translations = lang === "nl" ? translations_nl : translations_en;
+
+      // Find the modal's title and body
+      const modalTitle = serviceModal.querySelector("#serviceModalLabel");
+      const modalBody = serviceModal.querySelector("#serviceModalBody");
+
+      // Helper function to safely get nested keys (e.g., "serviceModals.s1")
+      const getNestedKey = (obj, path) => {
+        return path.split(".").reduce((acc, key) => (acc && acc[key] ? acc[key] : null), obj);
+      };
+
+      // Populate the modal title
+      if (translations[titleKey]) {
+        modalTitle.innerHTML = translations[titleKey];
+      } else {
+        modalTitle.innerHTML = "Service Details"; // Fallback
+      }
+
+      // Populate the modal body
+      const modalContent = getNestedKey(translations, modalKey);
+      if (modalContent) {
+        modalBody.innerHTML = modalContent;
+      } else {
+        // Fallback if the detailed key isn't found
+        const descKey = cardBody.querySelector("p").dataset.langKey;
+        modalBody.innerHTML = translations[descKey] || "More details coming soon.";
+      }
+    });
+  })();
 }); // End DOMContentLoaded
